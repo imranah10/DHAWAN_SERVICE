@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Car Detailing & Ceramic Coating in Sirsa | Detailing Street Sirsa</title>
+    <meta name="description" content="Premium car detailing, ceramic coating, and paint protection film (PPF) services in Sirsa, Haryana. Protect your car with 9H ceramic coating & premium PPF. Visit Detailing Street Sirsa Branch.">
+    <meta name="keywords" content="car detailing sirsa, ceramic coating sirsa, PPF sirsa, car polishing sirsa, car detailing near me, nano ceramic coating sirsa, car wash sirsa, auto detailing haryana">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Detailing Street">
+
+    <!-- Open Graph (Facebook / Instagram) -->
+    <meta property="og:title" content="Best Car Detailing & Ceramic Coating in Sirsa | Detailing Street">
+    <meta property="og:description" content="Get the best ceramic coating & PPF protection for your car in Sirsa, Haryana. Visit Detailing Street for premium car care services.">
+    <meta property="og:image" content="https://res.cloudinary.com/dbccjczk4/image/upload/v1761639814/pexels-photo-16196541212121_ynojco.png">
+    <meta property="og:url" content="https://www.detailingstreet.com/locations/sirsa">
+    <meta property="og:type" content="business.business">
+    <meta property="og:locale" content="en_IN">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Car Detailing & Ceramic Coating in Sirsa Haryana">
+    <meta name="twitter:description" content="Detailing Street Sirsa – Professional Ceramic Coating & PPF Services.">
+    <meta name="twitter:image" content="https://res.cloudinary.com/dbccjczk4/image/upload/v1761639814/pexels-photo-16196541212121_ynojco.png">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.detailingstreet.com/locations/sirsa">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap');
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .hero-section {
+            padding-top: 80px;
+            background: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.9)), 
+                        url('https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?w=1200') center/cover;
+            min-height: 100vh;
+        }
+        
+        .navbar-scrolled {
+            background-color: rgba(0, 0, 0, 0.9) !important;
+            backdrop-filter: blur(10px);
+        }
+
+        .scroll-indicator {
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .social-btn {
+            transition: all 0.3s ease;
+        }
+
+        .social-btn:hover {
+            transform: translateX(10px);
+        }
+
+        .testimonial-card {
+            position: relative;
+        }
+
+        .testimonial-card::before {
+            content: '';
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 0;
+            border-left: 20px solid transparent;
+            border-right: 20px solid transparent;
+            border-bottom: 20px solid #b91c1c;
+        }
+
+        .dot {
+            transition: all 0.3s ease;
+        }
+
+        .dot.active {
+            background-color: #000;
+            transform: scale(1.5);
+        }
+
+        .media-card {
+            transition: all 0.3s ease;
+        }
+
+        .media-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+
+        /* Rating Slider Styles */
+        .rating-slider {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .rating-track {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .rating-card {
+            min-width: 100%;
+            padding: 2rem;
+            background: rgb(104, 5, 5);
+            border-radius: 1rem;
+            color: #d1d5db;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .rating-stars {
+            color: #fbbf24;
+            margin-bottom: 1rem;
+        }
+
+        .customer-name {
+            color: #b91c1c;
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .customer-role {
+            color: #6b7280;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .slider-btn {
+            background: #b91c1c;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 3rem;
+            height: 3rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .slider-btn:hover {
+            background: #991b1b;
+            transform: scale(1.1);
+        }
+
+        .slider-dots {
+            display: flex;
+            justify-content: center;
+            gap: 0.5rem;
+            margin-top: 2rem;
+        }
+
+        .slider-dot {
+            width: 0.75rem;
+            height: 0.75rem;
+            border-radius: 50%;
+            background: #d1d5db;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .slider-dot.active {
+            background: #b91c1c;
+            transform: scale(1.2);
+        }
+            /* Back Button Styles */
+        .back-button {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 1000;
+            background: rgba(185, 28, 28, 0.9);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .back-button:hover {
+            background: rgba(153, 27, 27, 1);
+            transform: scale(1.1);
+        }
+
+        @media (max-width: 768px) {
+            .back-button {
+                width: 45px;
+                height: 45px;
+                top: 15px;
+                left: 15px;
+            }
+        }
+    </style>
+</head>
+<body class="bg-black">
+  <button class="back-button" id="backButton">
+    <a href="../../Media/OUR_PRESENCE.html" class="flex items-center">
+        <i class="fas fa-arrow-left text-xl"></i>
+    </a>
+</button>
+
+    <!-- HERO SECTION -->
+    <section class="hero-section flex items-center justify-center relative">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <!-- Left Side - Image -->
+                <div class="relative">
+                    <img 
+                        src="https://res.cloudinary.com/dbccjczk4/image/upload/v1761639814/pexels-photo-16196541212121_ynojco.png" 
+                        alt="Detailing Street Sirsa Workshop - Professional Car Detailing Services" 
+                        class="rounded-lg shadow-2xl h-[100vh] w-auto object-cover"
+                    >
+                    <div class="absolute top-20 left-0 bg-yellow-400 px-4 py-2 rounded-r-lg">
+                        <p class="text-black font-black">HARYANA</p>
+                    </div>
+                </div>
+
+                <!-- Right Side - Content -->
+                <div class="text-center md:text-left">
+                    <h1 class="text-4xl md:text-5xl font-black text-red-600 mb-6">
+                        Sirsa
+                    </h1>
+                    <p class="text-red-600 text-xl md:text-2xl font-bold mb-4">
+                        Premium Car Detailing Services in Sirsa
+                    </p>
+                    <p class="text-red-600 text-xl md:text-2xl font-bold mb-8">
+                        Haryana's Trusted Auto Care Experts
+                    </p>
+
+                    <!-- Social Buttons -->
+                    <div class="flex flex-wrap gap-6 justify-center">
+                        <!-- Instagram -->
+                        <a href="https://www.instagram.com/detailingstreet" target="_blank" class="flex items-center justify-center bg-gradient-to-r from-purple-600 to-pink-600 text-white w-16 h-16 rounded-full shadow-lg hover:scale-110 transition-transform duration-300">
+                            <i class="fab fa-instagram text-2xl"></i>
+                        </a>
+
+                        <!-- WhatsApp -->
+                        <a href="https://wa.me/917838509509" target="_blank" class="flex items-center justify-center bg-green-500 text-white w-16 h-16 rounded-full shadow-lg hover:scale-110 transition-transform duration-300">
+                            <i class="fab fa-whatsapp text-2xl"></i>
+                        </a>
+
+                        <!-- X (Twitter) -->
+                        <a href="https://x.com/detailingstreet" target="_blank" class="flex items-center justify-center bg-black text-white w-16 h-16 rounded-full border border-white shadow-lg hover:scale-110 transition-transform duration-300">
+                            <i class="fab fa-x-twitter text-2xl"></i>
+                        </a>
+
+                        <!-- Call -->
+                        <a href="tel:+917838509509" class="flex items-center justify-center bg-red-600 text-white w-16 h-16 rounded-full shadow-lg hover:scale-110 transition-transform duration-300">
+                            <i class="fas fa-phone text-2xl"></i>
+                        </a>
+
+                        <!-- Facebook -->
+                        <a href="https://www.facebook.com/detailingstreet" target="_blank" class="flex items-center justify-center bg-blue-600 text-white w-16 h-16 rounded-full shadow-lg hover:scale-110 transition-transform duration-300">
+                            <i class="fab fa-facebook-f text-2xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-center scroll-indicator">
+            <p class="text-white text-sm mb-2">SCROLL</p>
+            <i class="fas fa-chevron-down text-white text-2xl"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="bg-gradient-to-b from-black to-gray-900 py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-5xl md:text-7xl font-black text-red-600 text-center mb-12">ABOUT</h2>
+            <p class="text-gray-300 text-center max-w-5xl mx-auto text-lg leading-relaxed">
+                Leaders in Nano Ceramic Coating and Paint Protection Film in India. Keep your vehicle shiny and protected with our German made paint protection coating and USA made paint protection film. Choose Detailing Street, Invest wisely and invest in the best. Now available in Sirsa, Haryana.
+            </p>
+
+            <div class="flex items-center justify-center gap-4 mt-12">
+                <i class="fas fa-map-marker-alt text-red-600 text-3xl"></i>
+                <p class="text-white text-lg md:text-xl font-semibold">
+                    Sirsa, Haryana - Premium Car Detailing & Protection Services
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rating Feedback Slider Section -->
+    <section class="w-full bg-white py-20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl lg:text-6xl font-black text-gray-900 mb-4">
+                     REVIEWS
+                </h2>
+                <p class="text-gray-600 text-lg max-w-2xl mx-auto">
+                    See what our satisfied customers in Sirsa have to say about our premium detailing services
+                </p>
+            </div>
+
+            <div class="rating-slider relative">
+                <!-- Slider Navigation Buttons -->
+                <button class="slider-btn absolute left-4 top-1/2 transform -translate-y-1/2 z-10" id="prev-btn">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="slider-btn absolute right-4 top-1/2 transform -translate-y-1/2 z-10" id="next-btn">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+
+                <!-- Rating Cards Track -->
+                <div class="rating-track" id="rating-track">
+                    <!-- Rating Card 1 -->
+                    <div class="rating-card">
+                        <div class="rating-stars text-2xl">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-100  text-lg leading-relaxed mb-6">
+                            "Absolutely amazing service! My car looks brand new after the ceramic coating. The team at Detailing Street Sirsa is professional and pays attention to every detail. Highly recommended!"
+                        </p>
+                        <div class="customer-name">Rajesh Kumar</div>
+                    </div>
+
+                    <!-- Rating Card 2 -->
+                    <div class="rating-card">
+                        <div class="rating-stars text-2xl">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p class="text-gray-200 text-lg leading-relaxed mb-6">
+                            "The PPF installation was flawless! My car is protected from scratches and the shine is incredible. Worth every penny for the quality of work at Detailing Street Sirsa."
+                        </p>
+                        <div class="customer-name">Priya Sharma</div>
+                    </div>
+
+                    <!-- Rating Card 3 -->
+                    <div class="rating-card">
+                        <div class="rating-stars text-2xl">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-100 text-lg leading-relaxed mb-6">
+                            "Best detailing service in Sirsa! The paint restoration brought back the original color of my 10-year-old car. The team is knowledgeable and friendly."
+                        </p>
+                        <div class="customer-name">Amit Singh</div>
+                    </div>
+
+                    <!-- Rating Card 4 -->
+                    <div class="rating-card">
+                        <div class="rating-stars text-2xl">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-100 text-lg leading-relaxed mb-6">
+                            "Professional service with excellent results. The headlight restoration made my car look much newer. Will definitely come back for regular maintenance at Detailing Street Sirsa."
+                        </p>
+                        <div class="customer-name">Neha Gupta</div>
+                    </div>
+                </div>
+
+                <!-- Slider Dots -->
+                <div class="slider-dots" id="slider-dots">
+                    <div class="slider-dot active" data-index="0"></div>
+                    <div class="slider-dot" data-index="1"></div>
+                    <div class="slider-dot" data-index="2"></div>
+                    <div class="slider-dot" data-index="3"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Media Section -->
+    <section class="w-full bg-white">
+        <!-- Header -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-4 py-16">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-black text-gray-900 tracking-tight mb-4">
+                MEDIA
+            </h1>
+        </div>
+
+        <!-- Cards Grid -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="media-cards">
+                <!-- Media cards will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-gray-300 mt-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+            
+            <!-- Logo & Description -->
+            <div class="text-center md:text-left">
+                <img 
+                    src="https://res.cloudinary.com/dbccjczk4/image/upload/v1760605827/logo-loader_d4jmo0.png" 
+                    alt="Detailing Street Logo - Premium Car Detailing Sirsa" 
+                    class="w-28 h-28 object-contain mx-auto md:mx-0"
+                >
+                <p class="mt-4 text-sm">
+                    Detailing Street Sirsa provides advanced Nano-technology ceramic coatings and Paint Protection Film (PPF) to protect vehicles from scratches, chips, and contaminants while ensuring a long-lasting, glossy finish.
+                </p>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+                <h3 class="text-white font-semibold text-lg mb-4">Quick Links</h3>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="../../../index.html" class="hover:text-red-400 transition-colors">Home</a></li>
+                    <li><a href="../../About.html" class="hover:text-red-400 transition-colors">About Us</a></li>
+                    <li><a href="../../Service.html" class="hover:text-red-400 transition-colors">Services</a></li>
+                </ul>
+            </div>
+
+            <!-- Services -->
+            <div>
+                <h3 class="text-white font-semibold text-lg mb-4">Product & Services</h3>
+                <ul class="space-y-2 text-sm">
+                    <li>Paint Protection Film</li>
+                    <li>Nano Ceramic Coating</li>
+                    <li>Ultra Graphene Coating</li>
+                    <li>Car Detailing</li>
+                    <li>Ultra Graphene Coating</li>
+                    <li>Ultra Production Armor Coating</li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div>
+                <h3 class="text-white font-semibold text-lg mb-4">Contact Us</h3>
+                <ul class="space-y-3 text-sm">
+                    <li class="flex items-start">
+                        <i class="fa-solid fa-location-dot text-red-800 mr-2 mt-1"></i>
+                        Sirsa, Haryana - Premium Car Detailing Services
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fa-solid fa-phone text-red-800 mr-2"></i>
+                        +91-7838-509-509
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fa-solid fa-envelope text-red-800 mr-2"></i>
+                        care@detailingstreet.com
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- Social Media -->
+            <div>
+                <h3 class="text-white font-semibold text-lg mb-3 text-center md:text-left">Follow Us</h3>
+                <div class="flex justify-center md:justify-start space-x-4 mt-3">
+                    <a href="https://www.facebook.com/detailingstreet" target="_blank" class="bg-red-700 text-white w-10 h-10 flex items-center justify-center rounded-full hover:bg-red-800 transition-all duration-300">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/detailingstreet" target="_blank" class="bg-red-700 text-white w-10 h-10 flex items-center justify-center rounded-full hover:bg-red-800 transition-all duration-300">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://x.com/detailingstreet" target="_blank" class="bg-red-700 text-white w-10 h-10 flex items-center justify-center rounded-full hover:bg-red-800 transition-all duration-300">
+                        <i class="fab fa-x"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@DetailingStreetVlogs/videos" target="_blank" class="bg-red-700 text-white w-10 h-10 flex items-center justify-center rounded-full hover:bg-red-800 transition-all duration-300">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Footer -->
+        <div class="border-t border-gray-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col sm:flex-row justify-between items-center text-sm text-gray-400 space-y-3 sm:space-y-0">
+                <div>&copy; 2025 Detailing Street Sirsa. All rights reserved.</div>
+                <div class="space-x-6">
+                    <a href="#" class="hover:text-red-400 transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-red-400 transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Media Cards Data
+        const mediaCards = [
+            {
+                image: "https://res.cloudinary.com/dbccjczk4/image/upload/v1761220557/bodypaint-female-girl-50595_yowj3a.jpg",
+                title: "Full guide to protect your car Coating",
+                category: "Detailing",
+                description: "Protect your car's paint with ProShield PPF, the ultimate defense against scratches, UV rays, and road debris. Keep your vehicle looking brand new with lasting gloss and superior clarity. Follow simple aftercare to maintain its shine and performance for years.",
+                path: "../../Media/Full_Guide.html"
+            },
+            {
+                image: "https://res.cloudinary.com/dbccjczk4/image/upload/v1760704550/auto-automobile-automotive-358201_1_eei0gg.jpg",
+                title: "OUR presence",
+                category: "Detailing",
+                description: "Join India's leading car detailing network with Detailing Street. Our proven franchise model, strong brand reputation, and complete business support empower partners to achieve lasting success in the detailing industry.",
+                path: "../../Media/OUR_PRESENCE.html"
+            },
+            {
+                image: "https://res.cloudinary.com/dbccjczk4/image/upload/v1761221029/art-blur-close-up-1826029_aajl9f.jpg",
+                title: "Top 10 Car Detailing Franchises in India",
+                category: "Protection",
+                description: "Keep your car looking flawless and protect its value with expert detailing tips from Detailing Street. Go beyond regular washes and maintain that showroom shine.",
+                path: "../../Media/Top_Ten.html"
+            },
+        ];
+
+        // Function to render media cards
+        function renderMediaCards() {
+            const mediaContainer = document.getElementById('media-cards');
+            mediaContainer.innerHTML = '';
+
+            mediaCards.forEach(card => {
+                const cardElement = document.createElement('div');
+                cardElement.className = 'media-card bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300';
+                cardElement.innerHTML = `
+                    <a href="${card.path}" class="block">
+                        <div class="relative overflow-hidden">
+                            <img 
+                                src="${card.image}" 
+                                alt="${card.title}"
+                                class="w-full h-48 object-cover transition-transform duration-500 hover:scale-110"
+                                loading="lazy"
+                            >
+                            <div class="absolute top-4 left-4">
+                                <span class="bg-red-600 text-white px-3 py-1 rounded-full text-xs font-bold">
+                                    ${card.category}
+                                </span>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-3 line-clamp-2">
+                                ${card.title}
+                            </h3>
+                            <p class="text-gray-600 text-sm leading-relaxed mb-4 line-clamp-3">
+                                ${card.description}
+                            </p>
+                            <div class="flex items-center justify-between">
+                                <span class="text-red-600 font-semibold text-sm">Read More</span>
+                                <i class="fas fa-arrow-right text-red-600"></i>
+                            </div>
+                        </div>
+                    </a>
+                `;
+                mediaContainer.appendChild(cardElement);
+            });
+        }
+
+        // Rating Slider Functionality
+        let currentSlide = 0;
+        const totalSlides = 4;
+        const ratingTrack = document.getElementById('rating-track');
+        const dots = document.querySelectorAll('.slider-dot');
+        const prevBtn = document.getElementById('prev-btn');
+        const nextBtn = document.getElementById('next-btn');
+
+        function updateSlider() {
+            ratingTrack.style.transform = `translateX(-${currentSlide * 100}%)`;
+            
+            // Update dots
+            dots.forEach((dot, index) => {
+                dot.classList.toggle('active', index === currentSlide);
+            });
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            updateSlider();
+        }
+
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+            updateSlider();
+        }
+
+        // Mobile menu functionality
+        function setupMobileMenu() {
+            const mobileToggle = document.getElementById('mobile-toggle');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            if (mobileToggle && mobileMenu) {
+                mobileToggle.addEventListener('click', function() {
+                    mobileMenu.classList.toggle('hidden');
+                    // Toggle between hamburger and close icon
+                    const icon = mobileToggle.querySelector('i');
+                    if (icon.classList.contains('fa-bars')) {
+                        icon.classList.remove('fa-bars');
+                        icon.classList.add('fa-times');
+                    } else {
+                        icon.classList.remove('fa-times');
+                        icon.classList.add('fa-bars');
+                    }
+                });
+
+                // Close mobile menu when clicking on a link
+                const mobileLinks = mobileMenu.querySelectorAll('a');
+                mobileLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileToggle.querySelector('i');
+                        icon.classList.remove('fa-times');
+                        icon.classList.add('fa-bars');
+                    });
+                });
+            }
+        }
+
+        // Initialize everything when DOM is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            renderMediaCards();
+            setupMobileMenu();
+            updateSlider(); // Initialize slider position
+
+            // Event Listeners for Slider
+            if (prevBtn && nextBtn) {
+                prevBtn.addEventListener('click', prevSlide);
+                nextBtn.addEventListener('click', nextSlide);
+            }
+
+            // Dot navigation
+            dots.forEach(dot => {
+                dot.addEventListener('click', () => {
+                    currentSlide = parseInt(dot.getAttribute('data-index'));
+                    updateSlider();
+                });
+            });
+
+            // Auto slide every 5 seconds
+            setInterval(nextSlide, 5000);
+
+            // Navbar scroll effect
+            window.addEventListener('scroll', function() {
+                const navbar = document.getElementById('site-navbar');
+                if (window.scrollY > 50) {
+                    navbar.classList.add('navbar-scrolled');
+                } else {
+                    navbar.classList.remove('navbar-scrolled');
+                }
+            });
+        });
+    </script>
+
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "AutoDetailing",
+        "name": "Detailing Street - Sirsa",
+        "image": "https://res.cloudinary.com/dbccjczk4/image/upload/v1761639814/pexels-photo-16196541212121_ynojco.png",
+        "url": "https://www.detailingstreet.com/locations/sirsa",
+        "telephone": "+91-7838-509-509",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Sirsa Location",
+            "addressLocality": "Sirsa",
+            "addressRegion": "Haryana",
+            "postalCode": "125055",
+            "addressCountry": "IN"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "29.5334",
+            "longitude": "75.0178"
+        },
+        "openingHours": "Mo-Su 09:00-20:00",
+        "sameAs": [
+            "https://www.facebook.com/detailingstreet",
+            "https://www.instagram.com/detailingstreet/",
+            "https://x.com/detailingstreet",
+            "https://www.youtube.com/@DetailingStreetVlogs/videos"
+        ]
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Detailing Street",
+        "url": "https://www.detailingstreet.com",
+        "logo": "https://res.cloudinary.com/dbccjczk4/image/upload/v1760605827/logo-loader_d4jmo0.png",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+91-7838-509-509",
+            "contactType": "customer service"
+        }
+    }
+    </script>
+</body>
+</html>

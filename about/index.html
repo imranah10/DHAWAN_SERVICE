@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Detailing Street is a trusted car detailing brand offering ceramic coating, PPF, and premium car care services across India. Learn more about us.">
+    <meta name="keywords" content="professional car detailing services
+car detailing brand in India
+paint protection film (PPF)
+interior and exterior car detailing
+premium car care services
+ceramic coating services in India
+pan India car detailing brand">
+   
+<title>About Detailing Street | Car Detailing, Ceramic Coating & PPF Experts</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Detailing Street">
+    <meta property="og:title" content="About Us - Detailing Street | Ceramic Coatings & PPF Specialists">
+    <meta property="og:description" content="Detailing Street is the leader in ceramic coatings based on Nano-technology. Professional PPF installation and vehicle protection services.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://detailingstreet.com/about.html">
+    <meta property="og:image" content="https://res.cloudinary.com/dbccjczk4/image/upload/v1761286852/1600px_X_1000px_sexpls.jpg">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Detailing Street",
+      "description": "Leader in ceramic coatings based on Nano-technology and professional PPF installation",
+      "url": "https://detailingstreet.com",
+      "logo": "https://res.cloudinary.com/dbccjczk4/image/upload/v1760605827/logo-loader_d4jmo0.png",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "F-2, Shopping Center,  Mansarover Garden, Delhi 110015",
+        "addressLocality": "Delhi",
+        "postalCode": "110015",
+        "addressCountry": "IN"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+91-7838-509-509",
+        "contactType": "customer service",
+        "email": "care@detailingstreet.com"
+      },
+      "sameAs": [
+        "https://www.facebook.com/detailingstreet",
+        "https://www.instagram.com/detailingstreet",
+        "https://x.com/detailingstreet",
+        "https://www.youtube.com/@DetailingStreetVlogs"
+      ]
+    }
+    </script>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        .stat-icon {
+            transition: transform 0.3s ease;
+        }
+        
+        .stat-icon:hover {
+            transform: scale(1.1);
+        }
+        
+        .text-justify {
+            text-align: justify;
+        }
+
+        /* Dropdown Styles */
+        .dropdown-container {
+            position: relative;
+        }
+
+        .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            z-index: 1000;
+            display: none;
+            min-width: 10rem;
+            padding: 0.5rem 0;
+            margin: 0.125rem 0 0;
+            font-size: 0.875rem;
+            color: #fff;
+            text-align: left;
+            list-style: none;
+            background-color: rgba(31, 41, 55, 0.95);
+            background-clip: padding-box;
+            border-radius: 0.75rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-10px);
+        }
+        
+        .dropdown-container:hover .dropdown-menu {
+            display: block;
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+        
+        .dropdown-menu a {
+            display: block;
+            width: 100%;
+            padding: 0.5rem 1rem;
+            clear: both;
+            font-weight: 400;
+            color: #fff;
+            text-align: inherit;
+            text-decoration: none;
+            white-space: nowrap;
+            background-color: transparent;
+            border: 0;
+            transition: all 0.2s ease;
+        }
+        
+        .dropdown-menu a:hover {
+            background-color: #ef4444;
+            border-radius: 0.5rem;
+            color: white;
+        }
+        
+        /* Create a connecting bridge between trigger and dropdown */
+        .dropdown-container::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 100%;
+            height: 20px;
+            background: transparent;
+        }
+
+        @media (max-width: 768px) {
+            .text-justify {
+                text-align: left;
+            }
+        }
+        
+        /* Navbar scroll effect - FIXED */
+        .navbar-scrolled {
+            background-color: rgba(0, 0, 0, 0.95) !important;
+            backdrop-filter: blur(10px);
+        }
+
+        /* Mobile menu animation */
+        .mobile-menu {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+        
+        .mobile-menu.active {
+            max-height: 500px;
+        }
+        
+        /* Mobile dropdown animation */
+        .mobile-dropdown {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+        
+        .mobile-dropdown.active {
+            max-height: 200px;
+        }
+        
+        /* Mobile menu button animation */
+        .mobile-toggle .bar {
+            display: block;
+            width: 25px;
+            height: 3px;
+            margin: 5px auto;
+            background-color: #fff;
+            transition: all 0.3s ease-in-out;
+        }
+        
+        .mobile-toggle.active .bar:nth-child(1) {
+            transform: translateY(8px) rotate(45deg);
+        }
+        
+        .mobile-toggle.active .bar:nth-child(2) {
+            opacity: 0;
+        }
+        
+        .mobile-toggle.active .bar:nth-child(3) {
+            transform: translateY(-8px) rotate(-45deg);
+        }
+        
+        /* Loading animation for images */
+        img {
+            transition: opacity 0.3s;
+        }
+        
+        img[data-src] {
+            opacity: 0;
+        }
+        
+        img.loaded {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-black text-white">
+ 
+<nav id="site-navbar" class="fixed w-full z-50 transition-all duration-300 bg-transparent">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-20">
+            <!-- Logo -->
+            <a href="../index.html" class="flex-shrink-0 flex items-center">
+                <div class="w-20 h-20 rounded-lg overflow-hidden flex items-center justify-center">
+                    <img src="https://res.cloudinary.com/dbccjczk4/image/upload/v1760605827/logo-loader_d4jmo0.png" alt="Detailing Street Logo" class="w-full h-full object-cover">
+                </div>
+            </a>
+
+            <!-- Desktop Menu (Centered) -->
+            <div id="desktop-menu" class="hidden lg:flex items-center space-x-6 absolute left-1/2 transform -translate-x-1/2">
+                <a href="../home_/" class="px-3 py-2 text-sm font-medium text-white hover:text-red-500 transition-colors">HOME</a>
+                <a href="../about/" class="px-3 py-2 text-sm font-medium text-white hover:text-red-400 transition-colors">ABOUT US</a>
+                
+                <!-- Services Dropdown -->
+                <div class="dropdown-container">
+                    <a href="../service_/"
+                        class="px-3 py-2 text-sm font-medium text-white hover:text-red-400 transition-colors flex items-center dropdown-toggle"
+                        id="services-dropdown-toggle">
+                        SERVICES
+                        <svg class="w-4 h-4 ml-1 transition-transform" fill="none"
+                            stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </a>
+
+                    
+                    <!-- Dropdown Menu -->
+                    <div class="dropdown-menu" id="services-dropdown-menu">
+                        <a href="../product_Service/"
+                            class="block px-4 py-2 text-sm hover:bg-red-500 hover:rounded-lg transition-all duration-200">
+                            Product & Services
+                        </a>
+                    </div>
+                </div>
+
+                <a href="../franchise/" class="px-3 py-2 text-sm font-medium text-white hover:text-red-400 transition-colors">FRANCHISE</a>
+  <a href="../inquire/" class="px-3 py-2 text-sm font-medium text-white hover:text-red-400 transition-colors">INQUIRY</a>
+
+                                <a href="../Blogs/" class="px-3 py-2 text-sm font-medium text-white hover:text-red-400 transition-colors">BLOG</a>
+
+        
+                            </div>
+
+            <!-- Contact Button (Right) -->
+            <div class="hidden lg:block">
+                <a href="../contact/">
+                    <button class="relative overflow-hidden group flex items-center justify-center py-2 px-5 rounded-lg font-medium text-white border border-red-600 bg-transparent hover:bg-red-600 transition-colors">
+                        CONTACT US
+                    </button>
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <div class="lg:hidden flex items-center">
+                <button id="mobile-toggle" class="mobile-toggle focus:outline-none p-2">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+<!-- Mobile Menu -->
+<div id="mobile-menu" class="mobile-menu lg:hidden hidden px-2 pt-2 pb-3 space-y-1 sm:px-3 border-t border-gray-700 bg-black/95">
+
+    <!-- Home -->
+    <a href="../home_/" 
+       class="block text-white px-3 py-2 rounded-md hover:bg-gray-800 transition-colors">
+        Home
+    </a>
+
+    <!-- About -->
+    <a href="../about/" 
+       class="block text-white px-3 py-2 rounded-md hover:bg-gray-800 transition-colors">
+        About Us
+    </a>
+
+    <!-- Services + Dropdown -->
+    <div class="relative">
+        <div class="flex justify-between items-center">
+            <!-- Services Link -->
+            <a href="../service_/"
+               class="w-full block text-white px-3 py-2 rounded-md hover:bg-gray-800 transition-colors">
+                Services
+            </a>
+            <!-- Dropdown Arrow -->
+            <button
+                id="mobile-service-btn"
+                type="button"
+                class="px-3 py-2 text-white rounded-md hover:bg-gray-800 transition-colors flex items-center justify-center"
+            >
+                <svg
+                    id="mobile-arrow"
+                    class="w-4 h-4 transform transition-transform duration-200"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                >
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                </svg>
+            </button>
+        </div>
+        <!-- Dropdown Menu -->
+        <div
+            id="mobile-dropdown"
+            class="mobile-dropdown hidden flex-col ml-3 mt-1 bg-gray-800 rounded-lg shadow-lg overflow-hidden transition-all duration-300"
+        >
+            <a href="../product_Service/"
+               class="block px-4 py-2 text-sm text-white hover:bg-red-500 transition-colors rounded-lg">
+                Product & Services
+            </a>
+        </div>
+    </div>
+
+    <!-- Franchise -->
+    <a href="../franchise/"
+       class="block px-3 py-2 text-sm font-medium text-white hover:text-red-400 transition-colors">
+       FRANCHISE
+    </a>
+
+    <!-- Inquiry -->
+    <a href="../inquire/"
+       class="block px-3 py-2 text-sm font-medium text-white hover:text-red-400 transition-colors">
+       INQUIRY
+    </a>
+
+    <!-- Blog -->
+    <a href="../Blogs/" 
+       class="block text-white px-3 py-2 rounded-md hover:bg-gray-800 transition-colors">
+       Blog
+    </a>
+
+    <!-- Contact Button -->
+    <a href="../contact/" class="block mt-2">
+        <button class="w-full bg-red-600 text-white px-6 py-3 rounded-lg hover:bg-red-700 transition-colors">
+            Contact Us
+        </button>
+    </a>
+</div>
+
+</nav>
+
+    <!-- Background Section -->
+<section class="relative w-full h-[90vh] md:h-screen pt-16 overflow-hidden">
+
+  <!-- Desktop Background Image -->
+  <div 
+    class="absolute inset-0 bg-cover bg-center bg-no-repeat hidden sm:block"
+    style="background-image: url('https://res.cloudinary.com/dbccjczk4/image/upload/v1761286852/1600px_X_1000px_sexpls.jpg');">
+  </div>
+
+  <!-- Mobile Background Image -->
+  <div 
+    class="absolute inset-0 bg-cover bg-center bg-no-repeat block sm:hidden"
+    style="background-image: url('https://res.cloudinary.com/dbccjczk4/image/upload/v1763188394/About_Us_3840px_X_2160px_MOBILE_1_oefizw.jpg');">
+  </div>
+
+</section>
+
+
+
+    <!-- Who We Are Section -->
+    <section class="relative bg-black text-white py-12 md:py-20 px-4 sm:px-6 md:px-16">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-8 md:gap-12 items-start">
+            <div>
+                <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 md:mb-8">
+                    <span class="text-red-600">WHO WE</span> ARE
+                </h1>
+            </div>
+            
+            <div class="space-y-4 md:space-y-6 text-gray-300 leading-relaxed text-sm sm:text-base">
+                <p class="text-justify">
+                    Detailing Street is the leader in ceramic coatings based on Nano-technology. We offer wide range of 
+                    products each formulated for specific surfaces. Our ceramic coatings are designed for automotive 
+                    applications. The formulas are molecularly designed for surfaces such as paint, vinyl, polymers, glass and 
+                    more. Our coatings bond to surfaces at a molecular level, filling in any Nano-pores and creating a 
+                    hydrophobic surface that is impervious to contamination. This makes our products ideal for critical 
+                    applications across all industries.
+                </p>
+                
+                <p class="text-justify">
+                    Welcome to "Detailing Street," your ultimate guide to understanding and mastering Paint Protection Film 
+                    (PPF). Whether you're a car enthusiast, professional detailer, or someone looking to protect your vehicle, 
+                    this guide will walk you through everything you need to know about PPF.
+                </p>
+                
+                <p class="text-justify">
+                    Paint Protection Film (PPF) is a clear or colored thermoplastic urethane film applied to the painted 
+                    surfaces of a vehicle. Its purpose is to protect the car's exterior from scratches, chips, and other types of 
+                    damage caused by road debris, environmental contaminants, and everyday wear and tear.
+                </p>
+            </div>
+        </div>
+
+        <!-- Stats Section -->
+        <div class="max-w-7xl mx-auto mt-12 md:mt-20 grid grid-cols-2 md:grid-cols-5 gap-4 sm:gap-6 md:gap-8">
+            <div class="text-center">
+                <img src="https://res.cloudinary.com/dbccjczk4/image/upload/v1761383030/coated_jitlec.png" 
+                     alt="Car Protection Icon" 
+                     class="w-12 h-12 sm:w-14 sm:h-14 md:w-28 md:h-28 mx-auto mb-2 sm:mb-3 md:mb-4 object-contain stat-icon">
+                <div class="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-1 sm:mb-2">
+                    61,572 +
+                </div>
+                 <div class="text-gray-400 uppercase text-xs sm:text-sm tracking-wide">
+                    PPF Done
+                </div>
+            </div>
+            
+               <div class="text-center">
+                <img src="https://res.cloudinary.com/dbccjczk4/image/upload/v1761383030/coated_jitlec.png" 
+                     alt="Car Protection Icon" 
+                     class="w-12 h-12 sm:w-14 sm:h-14 md:w-28 md:h-28 mx-auto mb-2 sm:mb-3 md:mb-4 object-contain stat-icon">
+                <div class="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-1 sm:mb-2">
+                   95607 +
+
+                </div>
+                <div class="text-gray-400 uppercase text-xs sm:text-sm tracking-wide">
+                    VEHICLES COATED
+                </div>
+            </div>
+            
+            <div class="text-center">
+                <img src="https://res.cloudinary.com/dbccjczk4/image/upload/v1761383041/review_pjxfwq.png" 
+                     alt="Car Protection Icon" 
+                     class="w-12 h-12 sm:w-14 sm:h-14 md:w-28 md:h-28 mx-auto mb-2 sm:mb-3 md:mb-4 object-contain stat-icon">
+                <div class="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-1 sm:mb-2">
+                  46991 +
+                </div>
+                <div class="text-gray-400 uppercase text-xs sm:text-sm tracking-wide">
+                   CUSTOMER REVIEWS
+                </div>
+            </div>
+            
+            <div class="text-center">
+                <img src="https://res.cloudinary.com/dbccjczk4/image/upload/v1761383052/happy_bmjsdj.png" 
+                     alt="Car Protection Icon" 
+                     class="w-12 h-12 sm:w-14 sm:h-14 md:w-28 md:h-28 mx-auto mb-2 sm:mb-3 md:mb-4 object-contain stat-icon">
+                <div class="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-1 sm:mb-2">
+                   147925 +
+                </div>
+                <div class="text-gray-400 uppercase text-xs sm:text-sm tracking-wide">
+                   HAPPY CLIENTS
+                </div>
+            </div>
+            
+            <div class="text-center">
+                <img src="https://res.cloudinary.com/dbccjczk4/image/upload/v1761383062/locations_nvbwc6.png" 
+                     alt="Car Protection Icon" 
+                     class="w-18 h-18 sm:w-18 sm:h-18 md:w-28 md:h-28 mx-auto mb-2 sm:mb-3 md:mb-4 object-contain stat-icon">
+                <div class="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-1 sm:mb-2">
+                    50 +
+                </div>
+                <div class="text-gray-400 uppercase text-xs sm:text-sm tracking-wide">
+                   LOCATIONS
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Why Choose Us Section -->
+<section class="py-12 md:py-20 px-4 sm:px-6 md:px-16 bg-gray-50">
+    <div class="max-w-7xl mx-auto">
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 text-center">
+            <span class="text-red-600">WHY CHOOSE</span> <span class="text-black/50">US</span>
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+            <!-- Card 1 -->
+            <div class="bg-gray-100 rounded-xl p-6 border border-gray-300 
+                 shadow-[0_5px_10px_rgba(255,0,0,0.3)] 
+                 flex items-center gap-6">
+
+                <div class="w-20 h-20 flex-shrink-0 rounded-lg overflow-hidden">
+                    <img src="https://res.cloudinary.com/dbccjczk4/image/upload/v1761386200/since121_1_dzq6wh.png" 
+                         alt="Expert Technician" class="w-full h-full object-cover">
+                </div>
+
+                <div>
+                    <div class="text-black/80 text-2xl mb-2">Since 2017</div>
+                    <p class="text-black text-sm">
+We deliver the best quality vehicle gloss and nano ceramic coating for more than 7 years now.                    </p>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-gray-100 rounded-xl p-6 border border-gray-300 
+                 shadow-[0_5px_10px_rgba(255,0,0,0.3)] 
+                 flex items-center gap-6">
+
+                <div class="w-20 h-20 flex-shrink-0 rounded-lg overflow-hidden">
+                    <img src="https://res.cloudinary.com/dbccjczk4/image/upload/v1761386189/studios_1_nfbs6l.png" 
+                         alt="Premium Studio" class="w-full h-full object-cover">
+                </div>
+
+                <div>
+                    <div class="text-black/80 text-2xl mb-2">50+ Studios</div>
+                    <p class="text-black text-sm">
+We have already opened over 50 studios dedicated to car PPF and coating services, providing top-notch care and maintenance for vehicles all over India.                    </p>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-gray-100 rounded-xl p-6 border border-gray-300 
+                 shadow-[0_5px_10px_rgba(255,0,0,0.3)] 
+                 flex items-center gap-6">
+
+                <div class="w-20 h-20 flex-shrink-0 rounded-lg overflow-hidden">
+                    <img src="https://res.cloudinary.com/dbccjczk4/image/upload/v1761386179/technology_1_gh76pl.png" 
+                         alt="Advanced Technology" class="w-full h-full object-cover">
+                </div>
+
+                <div>
+                    <div class="text-black/80 text-2xl mb-2">Advanced Technology
+                </div>
+                    <p class="text-black text-sm">
+                We have the most advanced detailing and coating technology to give your ride an unmatched finish.                    </p>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="bg-gray-100 rounded-xl p-6 border border-gray-300 
+                 shadow-[0_5px_10px_rgba(255,0,0,0.3)] 
+                 flex items-center gap-6">
+
+                <div class="w-20 h-20 flex-shrink-0 rounded-lg overflow-hidden">
+                    <img src="https://res.cloudinary.com/dbccjczk4/image/upload/v1761385705/carshine_gewxzs.png" 
+                         alt="Perfect Shine" class="w-full h-full object-cover">
+                </div>
+
+                <div>
+                    <div class="text-black/80 text-2xl mb-2">Supreme Shine Guaranteed</div>
+                    <p class="text-black text-sm">
+Our detailing and protection give maximum shine and protection to your ride.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="bg-gray-100 rounded-xl p-6 border border-gray-300 
+                 shadow-[0_5px_10px_rgba(255,0,0,0.3)] 
+                 flex items-center gap-6">
+
+                <div class="w-20 h-20 flex-shrink-0 rounded-lg overflow-hidden">
+                    <img src="https://res.cloudinary.com/dbccjczk4/image/upload/v1761385692/carprofessianal_ad5iix.png" 
+                         alt="Professional Detailing" class="w-full h-full object-cover">
+                </div>
+
+                <div>
+                    <div class="text-black/80 text-2xl mb-2">Trained Professionals
+</div>
+                    <p class="text-black text-sm">
+Our detailing services are executed by a team of highly trained and experienced detailing professionals.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="bg-gray-100 rounded-xl p-6 border border-gray-300 
+                 shadow-[0_5px_10px_rgba(255,0,0,0.3)] 
+                 flex items-center gap-6">
+
+                <div class="w-20 h-20 flex-shrink-0 rounded-lg overflow-hidden">
+                    <img src="https://res.cloudinary.com/dbccjczk4/image/upload/v1761385672/demo_qct2xz.png" 
+                         alt="Live Demo" class="w-full h-full object-cover">
+                </div>
+
+                <div>
+                    <div class="text-black/80 text-2xl mb-2">Free Instant Demo
+</div>
+                    <p class="text-black text-sm">
+You can contact us anytime to get a detailing demonstration and that too absolutely free.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card 7 -->
+            <div class="bg-gray-100 rounded-xl p-6 border border-gray-300 
+                 shadow-[0_5px_10px_rgba(255,0,0,0.3)] 
+                 flex items-center gap-6">
+
+                <div class="w-20 h-20 flex-shrink-0 rounded-lg overflow-hidden">
+                    <img src="https://res.cloudinary.com/dbccjczk4/image/upload/v1761385654/support12_udidjv.png" 
+                         alt="Customer Support" class="w-full h-full object-cover">
+                </div>
+
+                <div>
+                    <div class="text-black/80 text-2xl mb-2">24/7 Customer Support
+</div>
+                    <p class="text-black text-sm">
+We're available 24×7 for customers' detailing related queries and further support.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card 8 -->
+            <div class="bg-gray-100 rounded-xl p-6 border border-gray-300 
+                 shadow-[0_5px_10px_rgba(255,0,0,0.3)] 
+                 flex items-center gap-6">
+
+                <div class="w-20 h-20 flex-shrink-0 rounded-lg overflow-hidden">
+                    <img src="https://res.cloudinary.com/dbccjczk4/image/upload/v1761385857/support_b0v3sc.png" 
+                         alt="Customer Support 2" class="w-full h-full object-cover">
+                </div>
+
+                <div>
+                    <div class="text-black/80 text-2xl mb-2">Sales Assistance
+</div>
+                    <p class="text-black text-sm">
+We are always available to take care of our valued customers even after they have availed our services.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card 9 -->
+            <div class="bg-gray-100 rounded-xl p-6 border border-gray-300 
+                 shadow-[0_5px_10px_rgba(255,0,0,0.3)] 
+                 flex items-center gap-6">
+
+                <div class="w-20 h-20 flex-shrink-0 rounded-lg overflow-hidden">
+                    <img src="https://res.cloudinary.com/dbccjczk4/image/upload/v1761385603/Warrenty12_bkoqss.png" 
+                         alt="Warranty" class="w-full h-full object-cover">
+                </div>
+
+                <div>
+                    <div class="text-black/80 text-2xl mb-2">Pan India Warranty
+</div>
+                    <p class="text-black text-sm">
+Detailing Street has a Pan-India presence with a network of studios and support operations across 100+ to 50+ locations.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+  <!-- Customer Reviews Section -->
+<section class="py-12 md:py-20 px-4 sm:px-6 md:px-16 bg-white">
+  <div class="max-w-7xl mx-auto">
+      <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 text-center text-gray-900">
+          <span class="text-red-600">CUSTOMER</span> REVIEWS
+      </h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Review 1 -->
+          <div class="bg-white rounded-lg p-6 border border-gray-300 shadow-sm">
+              <div class="flex items-center mb-4">
+                  <div class="text-yellow-500 text-xl">★★★★★</div>
+                  <div class="ml-4 font-semibold text-gray-900">Rahul Sharma</div>
+              </div>
+              <p class="text-gray-700">"Detailing Street provided exceptional service for my car's PPF installation. The attention to detail was impressive and the finish is flawless. Highly recommended!"</p>
+          </div>
+
+          <!-- Review 2 -->
+          <div class="bg-white rounded-lg p-6 border border-gray-300 shadow-sm">
+              <div class="flex items-center mb-4">
+                  <div class="text-yellow-500 text-xl">★★★★★</div>
+                  <div class="ml-4 font-semibold text-gray-900">Priya Patel</div>
+              </div>
+              <p class="text-gray-700">"The ceramic coating has completely transformed my car's appearance. It's been six months and the hydrophobic effect is still as strong as day one. Great value for money!"</p>
+          </div>
+
+          <!-- Review 3 -->
+          <div class="bg-white rounded-lg p-6 border border-gray-300 shadow-sm">
+              <div class="flex items-center mb-4">
+                  <div class="text-yellow-500 text-xl">★★★★★</div>
+                  <div class="ml-4 font-semibold text-gray-900">Amit Kumar</div>
+              </div>
+              <p class="text-gray-700">"Professional service from start to finish. The team explained the entire process and delivered exactly what they promised. My car looks brand new even after daily use."</p>
+          </div>
+
+          <!-- Review 4 -->
+          <div class="bg-white rounded-lg p-6 border border-gray-300 shadow-sm">
+              <div class="flex items-center mb-4">
+                  <div class="text-yellow-500 text-xl">★★★★★</div>
+                  <div class="ml-4 font-semibold text-gray-900">Neha Gupta</div>
+              </div>
+              <p class="text-gray-700">"I was skeptical about PPF at first, but Detailing Street changed my mind. The film is virtually invisible and has already protected my car from several minor scratches. Excellent work!"</p>
+          </div>
+       </div>
+  </div>
+
+  <!-- Map Section -->
+  <div class="w-full flex justify-center items-center py-6 mt-12">
+ <iframe
+  src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d218.84259240671798!2d77.13628914031253!3d28.64529880283529!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1766147905206!5m2!1sen!2sin"
+  class="w-full h-[700px] md:h-[600px] lg:h-[400px] border-0"
+  loading="lazy"
+  referrerpolicy="no-referrer-when-downgrade"
+  allowfullscreen
+></iframe>
+
+  </div>
+</section>
+ 
+ <footer class="bg-black text-gray-300 mt-12">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+    
+    <!-- Logo & Description -->
+    <div class="text-center md:text-left">
+      <img 
+        src="https://res.cloudinary.com/dbccjczk4/image/upload/v1760605827/logo-loader_d4jmo0.png" 
+        alt="Detailing Street Logo" 
+        class="w-28 h-28 object-contain mx-auto md:mx-0"
+      >
+      <p class="mt-4 text-sm">
+        Detailing Street provides advanced Nano-technology ceramic coatings and Paint Protection Film (PPF) to protect vehicles from scratches, chips, and contaminants while ensuring a long-lasting, glossy finish.
+      </p>
+    </div>
+
+    <!-- Quick Links -->
+    <div>
+      <h3 class="text-white font-semibold text-lg mb-4">Quick Links</h3>
+      <ul class="space-y-2 text-sm">
+        <li><a href="../home_/" class="hover:text-red-400 transition-colors">Home</a></li>
+        <li><a href="../about/" class="hover:text-red-400 transition-colors">About Us</a></li>
+        <li><a href="../service_/" class="hover:text-red-400 transition-colors">Services</a></li>
+        <li><a href="../franchise/" class="hover:text-red-400 transition-colors"> Franchise</a></li>
+             <li><a href="../inquire/" class="hover:text-red-400 transition-colors"> Inquiry</a></li>
+        <li><a href="../Blogs/" class="hover:text-red-400 transition-colors">Blog</a></li>
+
+    </ul>
+    </div>
+
+    <!-- Services -->
+   <!-- Services -->
+          <div>
+          <h3 class="text-white font-semibold text-lg mb-4">Product & Services</h3>
+          <ul class="space-y-2 text-sm text-gray-300">
+            <li>
+              <a href="../DropDwon_Service/Product_Service/Paint_Protection/" class="hover:text-red-500 transition">
+                Paint Protection Film
+              </a>
+            </li>
+            <li>
+              <a href="../DropDwon_Service/Product_Service/Naro_Caramic/" class="hover:text-red-500 transition">
+                Nano Ceramic Coating
+              </a>
+            </li>
+            <li>
+              <a href="../DropDwon_Service/Product_Service/Ultra_Graphene/" class="hover:text-red-500 transition">
+                Ultra Graphene Coating
+              </a>
+            </li>
+            <li>
+              <a href="../DropDwon_Service/Product_Service/Car_Detailing/" class="hover:text-red-500 transition">
+                Car Detailing
+              </a>
+            </li>
+            <li>
+              <a href="../DropDwon_Service/Product_Service/Ultra_Production_Armor/" class="hover:text-red-500 transition">
+                Ultra Production Armor Coating
+              </a>
+            </li>
+          </ul>
+        </div>
+
+    <!-- Contact Info -->
+    <div>
+      <h3 class="text-white font-semibold text-lg mb-4">Contact Us</h3>
+      <ul class="space-y-3 text-sm">
+        <li class="flex items-start">
+          <i class="fa-solid fa-location-dot text-red-800 mr-2 mt-1"></i>
+         F-2, Shopping Center,  Mansarover Garden, Delhi 110015
+        <li class="flex items-center">
+          <i class="fa-solid fa-phone text-red-800 mr-2"></i>
+          +91-7838509509
+        </li>
+        <li class="flex items-center">
+          <i class="fa-solid fa-envelope text-red-800 mr-2"></i>
+          care@detailingstreet.com
+        </li>
+      </ul>
+    </div>
+    
+    <!-- Social Media -->
+    <div>
+      <h3 class="text-white font-semibold text-lg mb-3 text-center md:text-left">
+        Follow Us
+      </h3>
+      <div class="flex justify-center md:justify-start space-x-4 mt-3">
+        <a href="https://www.facebook.com/detailingstreet" target="_blank" class="bg-red-700 text-white w-10 h-10 flex items-center justify-center rounded-full hover:bg-red-800 transition-all duration-300">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com/detailingstreet?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D" target="_blank" class="bg-red-700 text-white w-10 h-10 flex items-center justify-center rounded-full hover:bg-red-800 transition-all duration-300">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://x.com/detailingstreet?lang=en" target="_blank" class="bg-red-700 text-white w-10 h-10 flex items-center justify-center rounded-full hover:bg-red-800 transition-all duration-300">
+          <i class="fab fa-x"></i>
+        </a>
+        <a href="https://www.youtube.com/@DetailingStreetVlogs/videos" target="_blank" class="bg-red-700 text-white w-10 h-10 flex items-center justify-center rounded-full hover:bg-red-800 transition-all duration-300">
+          <i class="fab fa-youtube"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom Footer -->
+  <div class="border-t border-gray-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col sm:flex-row justify-between items-center text-sm text-gray-400 space-y-3 sm:space-y-0">
+      <div>&copy; 2025 Detailing Street. All rights reserved.</div>
+      <div class="space-x-6">
+        <a href="#" class="hover:text-red-400 transition-colors">Privacy Policy</a>
+        <a href="#" class="hover:text-red-400 transition-colors">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    <script>
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('site-navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('navbar-scrolled');
+            } else {
+                navbar.classList.remove('navbar-scrolled');
+            }
+        });
+
+        // Mobile menu functionality
+        const mobileToggle = document.getElementById('mobile-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileServiceBtn = document.getElementById('mobile-service-btn');
+        const mobileDropdown = document.getElementById('mobile-dropdown');
+        const mobileArrow = document.getElementById('mobile-arrow');
+
+        mobileToggle.addEventListener('click', () => {
+            mobileToggle.classList.toggle('active');
+            mobileMenu.classList.toggle('active');
+            
+            if (mobileMenu.classList.contains('active')) {
+                mobileMenu.classList.remove('hidden');
+            } else {
+                // Wait for transition to complete before hiding
+                setTimeout(() => {
+                    if (!mobileMenu.classList.contains('active')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }, 300);
+            }
+        });
+
+        // Mobile services dropdown
+        mobileServiceBtn.addEventListener('click', () => {
+            mobileDropdown.classList.toggle('active');
+            mobileArrow.classList.toggle('rotate-180');
+        });
+
+        // Close mobile menu when clicking on a link
+        const mobileLinks = document.querySelectorAll('#mobile-menu a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileToggle.classList.remove('active');
+                mobileMenu.classList.remove('active');
+                setTimeout(() => {
+                    mobileMenu.classList.add('hidden');
+                }, 300);
+            });
+        });
+
+        // Image lazy loading
+        document.addEventListener('DOMContentLoaded', function() {
+            const images = document.querySelectorAll('img');
+            
+            const imageObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const img = entry.target;
+                        img.src = img.getAttribute('data-src') || img.src;
+                        img.classList.add('loaded');
+                        observer.unobserve(img);
+                    }
+                });
+            });
+            
+            images.forEach(img => {
+                if (img.complete) {
+                    img.classList.add('loaded');
+                } else {
+                    img.addEventListener('load', () => {
+                        img.classList.add('loaded');
+                    });
+                }
+                
+                if (img.hasAttribute('data-src')) {
+                    imageObserver.observe(img);
+                }
+            });
+        });
+    </script>
+</body>
+</html>

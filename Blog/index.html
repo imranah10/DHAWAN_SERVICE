@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- === PRIMARY META TAGS (SEO OPTIMIZED) === -->
+    <title>Auto Detailing Blog – Tips, PPF & Ceramic Coating Guides | Detailing Street</title>
+    <meta name="description" content="Read the latest auto detailing tips, PPF & ceramic coating guides, and car care how-tos on the Detailing Street blog. Learn expert detailing techniques and answers to common car protection questions.">
+    <meta name="keywords" content="how to remove swirl marks from paint, what is ceramic coating, benefits of PPF, auto detailing tips in Delhi, ceramic coating guide for drivers, best interior car cleaning tips.                    Auto Detailing Blog – Tips & Guides for Car Care">
+    <meta name="author" content="Detailing Street">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://detailingstreet.com/blogs/">
+
+    <!-- Open Graph (for social media) -->
+    <meta property="og:title" content="Auto Detailing Blog – Tips, PPF & Ceramic Coating Guides | Detailing Street">
+    <meta property="og:description" content="Expert auto detailing tips, PPF protection guides, ceramic coating insights, and car care strategies. Read the latest from Detailing Street.">
+    <meta property="og:url" content="https://detailingstreet.com/blogs/">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://res.cloudinary.com/dbccjczk4/image/upload/v1760605827/logo-loader_d4jmo0.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Auto Detailing Blog – Tips, PPF & Ceramic Coating Guides | Detailing Street">
+    <meta name="twitter:description" content="Read expert detailing guides, PPF and ceramic coating comparisons, interior care tips. Your car protection knowledge hub.">
+    <meta name="twitter:image" content="https://res.cloudinary.com/dbccjczk4/image/upload/v1760605827/logo-loader_d4jmo0.png">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* === ORIGINAL STYLES – PRESERVED & CLEAN === */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f4f4f4;
+            padding-top: 0;
+        }
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-top: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .header-content {
+            padding-top: 30px;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 2rem;
+            padding: 2rem 0 1rem 0;
+        }
+        .navbar-scrolled {
+            background-color: rgba(0, 0, 0, 0.95) !important;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .mobile-menu {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+        .mobile-menu.active {
+            max-height: 500px;
+        }
+        .mobile-dropdown {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+        .mobile-dropdown.active {
+            max-height: 200px;
+        }
+        .mobile-toggle .bar {
+            display: block;
+            width: 25px;
+            height: 3px;
+            margin: 5px auto;
+            background-color: #fff;
+            transition: all 0.3s ease-in-out;
+        }
+        .mobile-toggle.active .bar:nth-child(1) {
+            transform: translateY(8px) rotate(45deg);
+        }
+        .mobile-toggle.active .bar:nth-child(2) {
+            opacity: 0;
+        }
+        .mobile-toggle.active .bar:nth-child(3) {
+            transform: translateY(-8px) rotate(-45deg);
+        }
+        .dropdown-container {
+            position: relative;
+        }
+        .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            min-width: 200px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-10px);
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+        .dropdown-container:hover .dropdown-menu {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+        .dropdown-menu a {
+            color: #333;
+            padding: 10px 15px;
+            display: block;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+        .dropdown-menu a:hover {
+            background: #ef4444;
+            color: white;
+            border-radius: 4px;
+        }
+        .blog-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 0.6s ease forwards;
+        }
+        .blog-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+        }
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .blog-image {
+            width: 100%;
+            height: 200px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 3rem;
+            overflow: hidden;
+        }
+        .blog-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        .blog-content {
+            padding: 1.5rem;
+        }
+        .blog-date {
+            color: #999;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+        .blog-title {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #1e1e2f;
+            margin-bottom: 0.75rem;
+            line-height: 1.3;
+        }
+        .blog-excerpt {
+            color: #555;
+            margin-bottom: 1.25rem;
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+        .read-more {
+            display: inline-block;
+            padding: 0.5rem 1.5rem;
+            background: linear-gradient(135deg, #e44f04 0%, #620202 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 500;
+            transition: opacity 0.3s, transform 0.2s;
+        }
+        .read-more:hover {
+            opacity: 0.9;
+            transform: scale(1.02);
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+        .bg-section {
+            position: relative;
+            width: 100%;
+            height: 70vh;
+            min-height: 500px;
+            overflow: hidden;
+            margin-top: 0;
+        }
+        .bg-image {
+            position: absolute;
+            inset: 0;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 100%;
+        }
+        .bg-desktop {
+            background-image: url('https://res.cloudinary.com/dbccjczk4/image/upload/v1761286852/1600px_X_1000px_sexpls.jpg');
+        }
+        .bg-mobile {
+            background-image: url('https://res.cloudinary.com/dbccjczk4/image/upload/v1763188394/About_Us_3840px_X_2160px_MOBILE_1_oefizw.jpg');
+        }
+        .intro-text {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 16px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.04);
+            margin: 2rem 0 1rem 0;
+            border-left: 6px solid #e44f04;
+        }
+      .section-heading {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1e1e2f;
+    margin: 2.5rem 0 1rem 0;
+    padding-bottom: 0.5rem;
+    display: block;      /* inline-block ki jagah block use karo */
+    text-align: center;  /* center align */
+}
+
+        @media (max-width: 640px) {
+            .bg-section {
+                height: 60vh;
+            }
+            header h1 {
+                font-size: 2rem;
+            }
+            .blog-grid {
+                grid-template-columns: 1fr;
+            }
+            .section-heading {
+                font-size: 1.75rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- === NAVIGATION (unchanged structure, preserved) === -->
+    <nav id="site-navbar" class="fixed w-full z-50 transition-all duration-300" style="top: 0; left: 0; right: 0; background: transparent;">
+        <div class="container">
+            <div class="flex justify-between items-center h-20">
+                <a href="../index.html" class="flex-shrink-0 flex items-center">
+                    <div class="w-16 h-16 rounded-lg overflow-hidden flex items-center justify-center">
+                        <img src="https://res.cloudinary.com/dbccjczk4/image/upload/v1760605827/logo-loader_d4jmo0.png" 
+                             alt="Detailing Street Logo – Paint Protection and Ceramic Coating Experts" 
+                             class="w-full h-full object-cover">
+                    </div>
+                </a>
+                <div id="desktop-menu" class="hidden lg:flex items-center space-x-6 absolute left-1/2 transform -translate-x-1/2">
+                    <a href="../home_/" class="px-3 py-2 text-sm font-medium text-white hover:text-red-500 transition-colors">HOME</a>
+                    <a href="../about/" class="px-3 py-2 text-sm font-medium text-white hover:text-red-400 transition-colors">ABOUT US</a>
+                    <div class="dropdown-container">
+                        <a href="../Our_Service/" class="px-3 py-2 text-sm font-medium text-white hover:text-red-400 transition-colors flex items-center">
+                            SERVICES
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </a>
+                        <div class="dropdown-menu">
+                            <a href="../product_Service/" class="block px-4 py-2 text-sm hover:bg-red-500 hover:rounded-lg transition-all duration-200">
+                                Product & Services
+                            </a>
+                        </div>
+                    </div>
+                    <a href="../franchise/" class="px-3 py-2 text-sm font-medium text-white hover:text-red-400 transition-colors">FRANCHISE</a>
+                    <a href="../inquire/" class="px-3 py-2 text-sm font-medium text-white hover:text-red-400 transition-colors">INQUIRY</a>
+                    <a href="../Blogs/" class="px-3 py-2 text-sm font-medium text-white hover:text-red-400 transition-colors">BLOG</a>
+                </div>
+                <div class="hidden lg:block">
+                    <a href="../contact/">
+                        <button class="relative overflow-hidden group flex items-center justify-center py-2 px-5 rounded-lg font-medium text-white border border-red-600 bg-transparent hover:bg-red-600 transition-colors">
+                            CONTACT US
+                        </button>
+                    </a>
+                </div>
+                <div class="lg:hidden flex items-center">
+                    <button id="mobile-toggle" class="mobile-toggle focus:outline-none p-2">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu (preserved) -->
+        <div id="mobile-menu" class="mobile-menu lg:hidden hidden px-4 pt-2 pb-3 space-y-1 border-t border-gray-700 bg-black/95">
+            <a href="../home_/" class="block text-white px-3 py-2 rounded-md hover:bg-gray-800 transition-colors">Home</a>
+            <a href="../about/" class="block text-white px-3 py-2 rounded-md hover:bg-gray-800 transition-colors">About Us</a>
+            <div class="relative">
+                <div class="flex justify-between items-center">
+                    <a href="../service_/" class="w-full text-left block text-white px-3 py-2 rounded-md hover:bg-gray-800 transition-colors flex-1">Services</a>
+                    <button id="mobile-service-btn" type="button" class="px-3 py-2 text-white rounded-md hover:bg-gray-800 transition-colors flex items-center justify-center">
+                        <svg id="mobile-arrow" class="w-4 h-4 transition-transform duration-200" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                </div>
+                <div id="mobile-dropdown" class="mobile-dropdown hidden flex-col ml-3 mt-1 bg-gray-800 rounded-lg shadow-lg transition-all duration-200 overflow-hidden">
+                    <a href="../product_Service/" class="block px-4 py-2 text-sm text-white hover:bg-red-500 rounded-lg">Product & Services</a>
+                </div>
+            </div>
+            <a href="../franchise/" class="block px-3 py-2 text-sm font-medium text-white hover:text-red-400 transition-colors">FRANCHISE</a>
+            <a href="../inquire/" class="block px-3 py-2 text-sm font-medium text-white hover:text-red-400 transition-colors">INQUIRY</a>
+            <a href="../Blogs/" class="block text-white px-3 py-2 rounded-md hover:bg-gray-800 transition-colors">BLOG</a>
+            <a href="../contact/" class="block mt-2">
+                <button class="w-full bg-red-600 text-white px-6 py-3 rounded-lg hover:bg-red-700 transition-colors">Contact Us</button>
+            </a>
+        </div>
+    </nav>
+
+    <!-- === HERO SECTION – OPTIMIZED H1 === -->
+    <section class="bg-section">
+        <div class="bg-image bg-desktop hidden sm:block"></div>
+        <div class="bg-image bg-mobile block sm:hidden"></div>
+        <div class="absolute inset-0 flex items-center justify-center bg-black/30">
+        
+        </div>
+    </section>
+
+    <main class="container">
+
+
+        <!-- === SECTION 1: LATEST AUTO DETAILING ARTICLES (H2) === -->
+        <h2 class="section-heading"> Latest car Detailing </h2>
+        <div class="blog-grid">
+            <!-- CARD 1: Leather Armour (Interior) -->
+            <article class="blog-card">
+                <div class="blog-image">
+                    <img src="https://res.cloudinary.com/dbccjczk4/image/upload/v1763017363/LEATHER_ARMOUR_HEROSECTION_3840px_X_2400px_qlkuiz.jpg" 
+                         alt="Leather Armour interior protection – car leather seat shield and stain guard">
+                </div>
+                <div class="blog-content">
+                    <h3 class="blog-title">Leather Armour – Car Leather Seats Protection Ka Best Solution</h3>
+                    <p class="blog-excerpt">
+                        Leather Armour is an advanced interior protection solution that helps protect car leather seats from cracks, fading, stains, spills, and daily wear. This blog explains its key benefits, long-lasting durability, protective technology, and why it’s perfect for luxury cars.
+                    </p>
+                    <a href="./blog/Lather_Armour.html" class="read-more">Read More →</a>
+                </div>
+            </article>
+
+            <!-- CARD 2: Ceramic Coating (Featured) -->
+            <article class="blog-card">
+                <div class="blog-image">
+                    <img src="https://res.cloudinary.com/dh0gdjb2g/image/upload/v1764164326/gc2p7gkvgcpo5cbdzcyl.jpg" 
+                         alt="Ceramic coating application on car paint – nano-ceramic gloss and protection">
+                </div>
+                <div class="blog-content">
+                    <h3 class="blog-title">Ceramic Coating – Advanced Nano-Ceramic Protection for Paint</h3>
+                    <p class="blog-excerpt">
+                        In today’s world, a car is more than transportation; it’s an investment. Ceramic coating uses advanced nano-ceramic technology to protect paint long-term, enhance gloss, and maintain a premium, showroom-like finish against pollution, bird droppings, and wash marks.
+                    </p>
+                    <a href="./blog/Ceramic_Coating.html" class="read-more">Read More →</a>
+                </div>
+            </article>
+
+            <!-- CARD 3: PPF benefits (varied) -->
+            <article class="blog-card">
+                <div class="blog-image">
+                    <img src="https://res.cloudinary.com/dh0gdjb2g/image/upload/v1764165093/t7soukptncz51wy7dw3q.jpg" 
+                         alt="Paint Protection Film (PPF) applied on car hood – invisible shield">
+                </div>
+                <div class="blog-content">
+                    <h3 class="blog-title">Paint Protection Film (PPF) – Invisible Shield for Maximum Paint Safety</h3>
+                    <p class="blog-excerpt">
+                        Your car’s paint is constantly exposed to stone chips, scratches, UV rays, and road debris. PPF is a premium, invisible solution offering maximum paint safety while preserving original shine and finish. Self-healing technology ensures long-term defense.
+                    </p>
+                    <a href="./blog/Paint_Protection_Film.html" class="read-more">Read More →</a>
+                </div>
+            </article>
+        </div>
+
+        <!-- === SECTION 2: CERAMIC COATING GUIDES (H2) === -->
+        <h2 class="section-heading"> Ceramic Coating Guides</h2>
+        <div class="blog-grid">
+            <!-- Dedicated Ceramic Coating deep-dive (same as above but placed here for category) -->
+            <article class="blog-card">
+                <div class="blog-image">
+                    <img src="https://res.cloudinary.com/dbccjczk4/image/upload/v1761571747/9H_ULTRA_390px_X_250px_met0ss.jpg" 
+                         alt="9H Ultra ceramic coating – high-gloss nano protection for cars">
+                </div>
+                <div class="blog-content">
+                    <h3 class="blog-title">9H Ceramic Coating Explained: Is It Worth the Investment?</h3>
+                    <p class="blog-excerpt">
+                        What is 9H hardness? How long does ceramic coating last? We answer all common questions about nano-ceramic paint protection, water contact angle, self-cleaning effect, and how to maintain coated cars. Perfect for first-time users.
+                    </p>
+                    <a href="./blog/Ceramic_Coating_Guide.html" class="read-more">Read More →</a>
+                </div>
+            </article>
+        </div>
+
+        <!-- === SECTION 3: PPF & PROTECTION TIPS (H2) === -->
+        <h2 class="section-heading"> PPF & Protection Tips</h2>
+        <div class="blog-grid">
+            <!-- PPF Card 2 (differentiated title) -->
+            <article class="blog-card">
+                <div class="blog-image">
+                    <img src="https://res.cloudinary.com/dbccjczk4/image/upload/v1761211881/4Service_h3ehij.jpg" 
+                         alt="Paint Protection Film installation – self-healing PPF on luxury car">
+                </div>
+                <div class="blog-content">
+                    <h3 class="blog-title">5 Reasons to Invest in Paint Protection Film (PPF)</h3>
+                    <p class="blog-excerpt">
+                        From preserving resale value to invisible defense against swirl marks and rock chips, discover why PPF is the ultimate armor for your vehicle. Learn about self-healing technology, thickness options, and warranty benefits.
+                    </p>
+                    <a href="./blog/Paint_Protection_Film.html" class="read-more">Read More →</a>
+                </div>
+            </article>
+            <!-- PPF Card 3 – Advanced coating -->
+            <article class="blog-card">
+                <div class="blog-image">
+                    <img src="https://res.cloudinary.com/dbccjczk4/image/upload/v1761571747/9H_ULTRA_390px_X_250px_met0ss.jpg" 
+                         alt="Advanced PPF coating with hydrophobic properties on car bumper">
+                </div>
+                <div class="blog-content">
+                    <h3 class="blog-title">Protect Your Car with Advanced PPF Coating</h3>
+                    <p class="blog-excerpt">
+                        Shield your vehicle with advanced Paint Protection Film coating. This transparent, durable layer protects against scratches, rock chips, UV damage, and daily wear. Self-healing technology keeps your car’s paint smooth, glossy, and flawless.
+                    </p>
+                    <a href="./blog/Paint_Protection_Film.html" class="read-more">Read More →</a>
+                </div>
+            </article>
+        </div>
+
+        <!-- === SECTION 4: INTERIOR & EXTERIOR CAR CARE (H2) === -->
+        <h2 class="section-heading"> Interior & Exterior Car Care</h2>
+        <div class="blog-grid">
+            <!-- Leather Armour card (could be reused, but we already have it in Latest; we place a fresh unique card here) -->
+            <article class="blog-card">
+                <div class="blog-image">
+                    <img src="https://res.cloudinary.com/dbccjczk4/image/upload/v1763017363/LEATHER_ARMOUR_HEROSECTION_3840px_X_2400px_qlkuiz.jpg" 
+                         alt="Leather car seat protection – anti-crack and stain repellent">
+                </div>
+                <div class="blog-content">
+                    <h3 class="blog-title">Leather Armour Deep Dive: Shield Your Interior</h3>
+                    <p class="blog-excerpt">
+                        Specifically formulated for premium automotive leather, Leather Armour prevents fading, maintains softness, and repels liquids. Learn how this ceramic-infused coating outperforms standard conditioners and keeps your cabin like new.
+                    </p>
+                    <a href="./blog/Lather_Armour.html" class="read-more">Read More →</a>
+                </div>
+            </article>
+
+            <!-- NEW: Best Interior Car Cleaning Tips (targeted keyword) -->
+            <article class="blog-card">
+                <div class="blog-image">
+                    <!-- Using previously irrelevant image, repurposed with correct alt -->
+                    <img src="https://res.cloudinary.com/dbccjczk4/image/upload/v1761211718/br1_w8tp3f.jpg" 
+                         alt="Best interior car cleaning tips – dashboard and upholstery care">
+                </div>
+                <div class="blog-content">
+                    <h3 class="blog-title">Best Interior Car Cleaning Tips – Keep Your Cabin Fresh</h3>
+                    <p class="blog-excerpt">
+                        From removing dust vents to deep cleaning upholstery and eliminating odors, follow these pro tips for a spotless cabin. Learn which products are safe for screens, leather, and Alcantara. Step-by-step interior detailing routine.
+                    </p>
+                    <a href="./blog/Interior_Cleaning_Tips.html" class="read-more">Read More →</a>
+                </div>
+            </article>
+        </div>
+
+  
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Detailing Street. All rights reserved. Paint protection, ceramic coating & car care experts.</p>
+        </div>
+    </footer>
+
+    <script>
+        // === ORIGINAL JAVASCRIPT – PRESERVED & FULLY FUNCTIONAL ===
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('site-navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('navbar-scrolled');
+                navbar.style.backgroundColor = 'rgba(0, 0, 0, 0.95)';
+            } else {
+                navbar.classList.remove('navbar-scrolled');
+                navbar.style.backgroundColor = 'transparent';
+            }
+        });
+
+        const mobileToggle = document.getElementById('mobile-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileServiceBtn = document.getElementById('mobile-service-btn');
+        const mobileDropdown = document.getElementById('mobile-dropdown');
+        const mobileArrow = document.getElementById('mobile-arrow');
+
+        mobileToggle.addEventListener('click', () => {
+            mobileToggle.classList.toggle('active');
+            mobileMenu.classList.toggle('active');
+            if (mobileMenu.classList.contains('active')) {
+                mobileMenu.style.display = 'block';
+            } else {
+                setTimeout(() => {
+                    if (!mobileMenu.classList.contains('active')) {
+                        mobileMenu.style.display = 'none';
+                    }
+                }, 300);
+            }
+        });
+
+        mobileServiceBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            mobileDropdown.classList.toggle('active');
+            mobileArrow.style.transform = mobileDropdown.classList.contains('active') ? 'rotate(180deg)' : 'rotate(0)';
+        });
+
+        const mobileLinks = document.querySelectorAll('#mobile-menu a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileToggle.classList.remove('active');
+                mobileMenu.classList.remove('active');
+                mobileDropdown.classList.remove('active');
+                mobileArrow.style.transform = 'rotate(0)';
+                setTimeout(() => {
+                    mobileMenu.style.display = 'none';
+                }, 300);
+            });
+        });
+
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('.dropdown-container') && !e.target.closest('#mobile-service-btn')) {
+                mobileDropdown.classList.remove('active');
+                mobileArrow.style.transform = 'rotate(0)';
+            }
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const navbar = document.getElementById('site-navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('navbar-scrolled');
+                navbar.style.backgroundColor = 'rgba(0, 0, 0, 0.95)';
+            } else {
+                navbar.style.backgroundColor = 'transparent';
+            }
+        });
+    </script>
+</body>
+</html>

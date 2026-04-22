@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detailing Street - Paint Protection Film</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap');
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        .location-dot {
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        
+        .location-dot:hover {
+            transform: scale(1.3);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- About Section -->
+    <section class="max-w-7xl mx-auto px-4 py-16">
+        <div class="grid md:grid-cols-2 gap-8 items-center">
+            <!-- Left Side - Image -->
+            <div class="relative">
+                <div class="bg-black rounded-lg overflow-hidden shadow-2xl">
+                    <img src="https://images.unsplash.com/photo-1583121274602-3e2820c69888?w=800" 
+                         alt="Detailing Street" 
+                         class="w-full h-auto">
+                    <div class="absolute top-8 left-8">
+                        <h1 class="text-4xl md:text-5xl font-black">
+                            <span class="text-red-600">DETAILING</span>
+                            <span class="text-white"> STREET</span>
+                        </h1>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side - Content -->
+            <div class="space-y-6">
+                <p class="text-gray-700 leading-relaxed">
+                    At Detailing Street, we are proud to be a trusted name in the world of Paint Protection Film (PPF). Our reach extends far and wide, with a presence that resonates with car enthusiasts, professional detailers, and vehicle owners alike. Here's how we are making an impact:
+                </p>
+
+                <div class="space-y-4">
+                    <div>
+                        <h3 class="text-2xl font-bold text-red-600 mb-2">Local Expertise, Global Reach:</h3>
+                        <p class="text-gray-700">
+                            We serve a diverse clientele, from high-performance sports car owners to everyday drivers. Our state-of-the-art PPF solutions are applied in local workshops across the country and recommended by customers worldwide.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3 class="text-2xl font-bold text-red-600 mb-2">Industry Leaders:</h3>
+                        <p class="text-gray-700">
+                            With a reputation built on excellence, we stay ahead of industry trends and innovations, offering the latest advancements in PPF technology. From self-healing films to custom finishes, our influence shapes the future of automotive protection.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3 class="text-2xl font-bold text-red-600 mb-2">Commitment to Quality:</h3>
+                        <p class="text-gray-700">
+                            No matter where you find us, you can trust that our commitment to quality remains unwavering. Every installation is backed by a dedication to superior protection, craftsmanship, and customer satisfaction.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3 class="text-2xl font-bold text-red-600 mb-2">Customer-Centric Approach:</h3>
+                        <p class="text-gray-700">
+                            We value our customers and aim to make our services accessible. Whether you're visiting one of our many service locations or connecting with us online, we are always here to help protect and enhance your vehicle.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Locations Map Section -->
+    <section class="bg-white py-16">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid lg:grid-cols-5 gap-8">
+                <!-- Map - Takes 3 columns -->
+                <div class="lg:col-span-3 relative">
+                    <svg viewBox="0 0 800 900" class="w-full h-auto">
+                        <!-- India Map Outline (Simplified) -->
+                        <path d="M350,50 L380,80 L400,90 L430,85 L450,100 L480,120 L500,140 L510,180 L520,220 L530,260 L520,300 L510,340 L500,380 L490,420 L480,460 L460,500 L440,540 L420,580 L400,620 L380,660 L360,700 L340,740 L320,770 L300,790 L280,800 L260,790 L240,770 L220,740 L200,700 L180,660 L170,620 L160,580 L150,540 L140,500 L130,460 L125,420 L130,380 L140,340 L150,300 L160,260 L180,220 L200,180 L220,150 L240,120 L260,100 L280,85 L300,75 L320,65 Z" 
+                              fill="#991B1B" stroke="#000" stroke-width="2"/>
+                        
+                        <!-- North-East States -->
+                        <path d="M520,180 L540,170 L560,180 L570,200 L560,220 L540,230 L520,220 Z" fill="#1F2937" stroke="#000" stroke-width="1"/>
+                        
+                        <!-- Eastern States -->
+                        <path d="M460,420 L480,400 L500,420 L510,460 L500,500 L480,520 L460,500 Z" fill="#1F2937" stroke="#000" stroke-width="1"/>
+                        
+                        <!-- Southern States -->
+                        <path d="M280,650 L320,630 L360,650 L380,700 L360,750 L320,770 L280,750 L260,700 Z" fill="#1F2937" stroke="#000" stroke-width="1"/>
+                        
+                        <!-- Western States -->
+                        <path d="M160,300 L140,340 L130,400 L140,460 L160,500 L180,460 L190,400 L180,340 Z" fill="#1F2937" stroke="#000" stroke-width="1"/>
+
+                        <!-- Location Dots -->
+                        <circle cx="280" cy="200" r="6" fill="white" class="location-dot" data-location="Delhi"/>
+                        <circle cx="320" cy="240" r="6" fill="white" class="location-dot" data-location="Haryana"/>
+                        <circle cx="250" cy="280" r="6" fill="white" class="location-dot" data-location="Rajasthan"/>
+                        <circle cx="380" cy="320" r="6" fill="white" class="location-dot" data-location="Uttar Pradesh"/>
+                        <circle cx="420" cy="280" r="6" fill="white" class="location-dot" data-location="Bihar"/>
+                        <circle cx="240" cy="380" r="6" fill="white" class="location-dot" data-location="Madhya Pradesh"/>
+                        <circle cx="300" cy="420" r="6" fill="white" class="location-dot" data-location="Chhattisgarh"/>
+                        <circle cx="220" cy="480" r="6" fill="white" class="location-dot" data-location="Maharashtra"/>
+                        <circle cx="340" cy="550" r="6" fill="white" class="location-dot" data-location="Karnataka"/>
+                        <circle cx="240" cy="240" r="6" fill="white" class="location-dot" data-location="Punjab"/>
+                        <circle cx="500" cy="210" r="6" fill="white" class="location-dot" data-location="Jharkhand"/>
+                        <circle cx="180" cy="340" r="6" fill="white" class="location-dot" data-location="Gujarat"/>
+                    </svg>
+                </div>
+
+                <!-- Locations List - Takes 2 columns -->
+                <div class="lg:col-span-2 bg-red-600 text-white p-8 rounded-lg">
+                    <div class="mb-6">
+                        <input type="text" 
+                               placeholder="ENTER YOUR STATE NAME" 
+                               class="w-full px-4 py-3 bg-white text-gray-800 rounded focus:outline-none focus:ring-2 focus:ring-red-800">
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-6 text-sm">
+                        <!-- Column 1 -->
+                        <div class="space-y-4">
+                            <div>
+                                <h4 class="text-2xl font-black mb-2">DELHI</h4>
+                                <ul class="space-y-1 text-xs">
+                                    <li>MANSAROVER GARDAN</li>
+                                    <li>MODEL TOWN</li>
+                                    <li>KARKARDOOMA</li>
+                                    <li>VASANT KUNJ</li>
+                                    <li>EAST OF KAILASH</li>
+                                    <li>PITAMPURA</li>
+                                    <li>MALVIYA NAGAR</li>
+                                    <li>DWARKA</li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <h4 class="text-2xl font-black mb-2">HARYANA</h4>
+                                <ul class="space-y-1 text-xs">
+                                    <li>GURUGRAM SECTOR 18</li>
+                                    <li>GURUGRAM SECTOR 52</li>
+                                    <li>GURUGRAM SECTOR 78</li>
+                                    <li>FARIDABAD</li>
+                                    <li>PANCHKULA</li>
+                                    <li>SONIPAT</li>
+                                    <li>PANIPAT</li>
+                                    <li>HISAR</li>
+                                    <li>KARNAL</li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <h4 class="text-2xl font-black mb-2">CHHATTISGARH</h4>
+                                <ul class="space-y-1 text-xs">
+                                    <li>RAIPUR</li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <h4 class="text-2xl font-black mb-2">UTTAR PRADESH</h4>
+                            </div>
+                        </div>
+
+                        <!-- Column 2 -->
+                        <div class="space-y-4">
+                            <div>
+                                <h4 class="text-2xl font-black mb-2">RAJASTHAN</h4>
+                                <ul class="space-y-1 text-xs">
+                                    <li>VAISHALI NAGAR</li>
+                                    <li>GOPALPURA</li>
+                                    <li>MANSAROVAR</li>
+                                    <li>SIKAR</li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <h4 class="text-2xl font-black mb-2">BIHAR</h4>
+                                <ul class="space-y-1 text-xs">
+                                    <li>PATNA</li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <h4 class="text-2xl font-black mb-2">JAMMU KASHMIR</h4>
+                                <ul class="space-y-1 text-xs">
+                                    <li>JAMMU</li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <h4 class="text-2xl font-black mb-2">PUNJAB</h4>
+                                <ul class="space-y-1 text-xs">
+                                    <li>LUDHIANA</li>
+                                    <li>MOHALI</li>
+                                    <li>JALANDHAR</li>
+                                    <li>CHANDIGARH</li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <h4 class="text-2xl font-black mb-2">JHARAKAND</h4>
+                                <ul class="space-y-1 text-xs">
+                                    <li>DHANBAD</li>
+                                    <li>RANCHI</li>
+                                </ul>
+                            </div>
+
+                                <div>
+                                <h4 class="text-2xl font-black mb-2">UTTARAKHAND</h4>
+                                <ul class="space-y-1 text-xs">
+                                    <li>Haldwani</li>
+                                  
+                                </ul>
+                            </div>
+
+                            <div>
+                                <h4 class="text-2xl font-black mb-2">MADHYA PRADESH</h4>
+                                <ul class="space-y-1 text-xs">
+                                    <li>INDORE</li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <h4 class="text-2xl font-black mb-2">KARNATAKA</h4>
+                                <ul class="space-y-1 text-xs">
+                                    <li>BENGALURU</li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <h4 class="text-2xl font-black mb-2">HIMACHAL</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Add hover effects to location dots
+        document.querySelectorAll('.location-dot').forEach(dot => {
+            dot.addEventListener('mouseenter', function() {
+                const location = this.getAttribute('data-location');
+                this.setAttribute('r', '8');
+            });
+            
+            dot.addEventListener('mouseleave', function() {
+                this.setAttribute('r', '6');
+            });
+        });
+    </script>
+</body>
+</html>
