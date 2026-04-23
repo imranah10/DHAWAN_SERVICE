@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Dhawan Service - Expert Vehicle Documentation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+        body { font-family: 'Inter', sans-serif; background-color: #000; color: #fff; }
+        .input-field {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: #fff;
+            transition: all 0.3s ease;
+        }
+        .input-field:focus {
+            background: rgba(255, 255, 255, 0.08);
+            border-color: #ef4444;
+            outline: none;
+            box-shadow: 0 0 20px rgba(239, 68, 68, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-black">
+    <!-- Navbar -->
+    <nav id="site-navbar" class="fixed w-full z-50 bg-black/90 backdrop-blur-md border-b border-white/5 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-24">
+                <a href="../index.html" class="flex-shrink-0 flex items-center">
+                    <span class="text-3xl font-black tracking-tighter text-white uppercase italic"><span class="text-red-600">DHAWAN</span> SERVICE</span>
+                </a>
+                <div class="hidden lg:flex items-center space-x-10">
+                    <a href="../index.html" class="text-xs font-black tracking-[0.2em] hover:text-red-500 transition-colors uppercase">HOME</a>
+                    <a href="../about/index.html" class="text-xs font-black tracking-[0.2em] hover:text-red-500 transition-colors uppercase">ABOUT US</a>
+                    <a href="../Our_Service/index.html" class="text-xs font-black tracking-[0.2em] hover:text-red-500 transition-colors uppercase">SERVICES</a>
+                    <a href="../Blog/index.html" class="text-xs font-black tracking-[0.2em] hover:text-red-500 transition-colors uppercase">BLOG</a>
+                    <a href="./index.html" class="bg-red-600 text-white px-8 py-3 rounded-2xl text-xs font-black tracking-[0.2em] uppercase">CONTACT US</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative w-full h-[75vh] flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1920&auto=format&fit=crop" 
+                 alt="Contact Dhawan Service" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-b from-black/80 via-black/20 to-black"></div>
+        </div>
+        
+        <div class="relative z-10 text-center px-4 max-w-5xl">
+            <div class="mb-6 inline-block py-2 px-6 rounded-full bg-red-600/20 border border-red-600/30 backdrop-blur-md">
+                <span class="text-red-500 font-black tracking-[0.3em] text-[10px] uppercase">Get In Touch</span>
+            </div>
+            <h1 class="text-6xl md:text-9xl font-black italic tracking-tighter text-white mb-8 uppercase leading-none">
+                CONTACT <span class="text-red-600 drop-shadow-[0_15px_15px_rgba(239,68,68,0.3)]">US</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-300 font-bold italic tracking-wide uppercase max-w-3xl mx-auto leading-tight">
+                We're Here to Help with All Your Vehicle Documentation & Insurance Needs
+            </p>
+        </div>
+    </section>
+
+    <main class="py-32 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-24">
+                <h1 class="text-6xl md:text-8xl font-black italic mb-8 tracking-tighter uppercase leading-none">
+                    GET IN <span class="text-red-600">TOUCH</span>
+                </h1>
+                <p class="text-xl text-gray-400 font-medium italic max-w-2xl mx-auto uppercase">
+                    Have questions about vehicle insurance or documentation? Our experts are here to help you.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-20">
+                <!-- Contact Info -->
+                <div class="space-y-12">
+                    <div class="space-y-6">
+                        <h2 class="text-3xl font-black italic uppercase tracking-tighter">Contact Information</h2>
+                        <p class="text-gray-400 text-lg">Reach out to us via any of these channels. We typically respond within 2 hours during business hours.</p>
+                    </div>
+
+                    <div class="space-y-8">
+                        <div class="flex items-start gap-6 group">
+                            <div class="w-16 h-16 bg-red-600 rounded-2xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform shadow-lg shadow-red-600/20">
+                                <i class="fas fa-location-dot text-2xl text-white"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-black italic uppercase tracking-tighter mb-2">Our Office</h3>
+                                <p class="text-gray-400 font-medium">New Delhi, India<br>F-2, Shopping Center, Mansarover Garden, 110015</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-6 group">
+                            <div class="w-16 h-16 bg-red-600 rounded-2xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform shadow-lg shadow-red-600/20">
+                                <i class="fas fa-phone text-2xl text-white"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-black italic uppercase tracking-tighter mb-2">Call Us</h3>
+                                <p class="text-gray-400 font-medium">+91-XXXXXXXXXX<br>Mon - Sat: 9:00 AM - 7:00 PM</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-6 group">
+                            <div class="w-16 h-16 bg-red-600 rounded-2xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform shadow-lg shadow-red-600/20">
+                                <i class="fas fa-envelope text-2xl text-white"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-black italic uppercase tracking-tighter mb-2">Email Us</h3>
+                                <p class="text-gray-400 font-medium">care@dhawanservice.com<br>support@dhawanservice.com</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Map Placeholder -->
+                    <div class="w-full h-64 bg-zinc-900 rounded-[2.5rem] border border-white/5 flex items-center justify-center overflow-hidden grayscale">
+                        <img src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?q=80&w=1200&auto=format&fit=crop" alt="Map" class="w-full h-full object-cover opacity-30">
+                        <div class="absolute text-white font-black italic tracking-tighter uppercase text-xl">MAP LOCATION</div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="bg-zinc-900/50 backdrop-blur-xl p-12 rounded-[3rem] border border-white/5 shadow-2xl">
+                    <form action="#" class="space-y-8">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <div class="space-y-3">
+                                <label class="text-[10px] font-black tracking-widest text-zinc-500 uppercase">Full Name</label>
+                                <input type="text" placeholder="John Doe" class="w-full py-5 px-8 rounded-2xl input-field font-bold">
+                            </div>
+                            <div class="space-y-3">
+                                <label class="text-[10px] font-black tracking-widest text-zinc-500 uppercase">Email Address</label>
+                                <input type="email" placeholder="john@example.com" class="w-full py-5 px-8 rounded-2xl input-field font-bold">
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <div class="space-y-3">
+                                <label class="text-[10px] font-black tracking-widest text-zinc-500 uppercase">Phone Number</label>
+                                <input type="tel" placeholder="+91 00000 00000" class="w-full py-5 px-8 rounded-2xl input-field font-bold">
+                            </div>
+                            <div class="space-y-3">
+                                <label class="text-[10px] font-black tracking-widest text-zinc-500 uppercase">Service Required</label>
+                                <select class="w-full py-5 px-8 rounded-2xl input-field font-bold appearance-none">
+                                    <option>Vehicle Insurance</option>
+                                    <option>Challan Payment</option>
+                                    <option>PAN Card Service</option>
+                                    <option>Health & Pollution</option>
+                                    <option>RTO Assistance</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="space-y-3">
+                            <label class="text-[10px] font-black tracking-widest text-zinc-500 uppercase">Your Message</label>
+                            <textarea rows="5" placeholder="How can we help you today?" class="w-full py-5 px-8 rounded-2xl input-field font-bold resize-none"></textarea>
+                        </div>
+                        <button class="w-full bg-red-600 hover:bg-red-700 text-white font-black py-6 rounded-2xl transition-all duration-300 shadow-xl shadow-red-600/20 transform hover:scale-[1.02] uppercase tracking-[0.2em] text-xs">
+                            SEND MESSAGE
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black text-gray-400 py-32 px-4 border-t border-white/5">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-20">
+            <div class="space-y-8">
+                <span class="text-3xl font-black tracking-tighter mb-6 block uppercase italic"><span class="text-red-600">DHAWAN</span> SERVICE</span>
+                <p class="text-gray-500 max-w-md text-lg font-medium leading-relaxed">Founded with a mission to simplify vehicle care and documentation. Transparent pricing, expert guidance, and reliable service since 1998.</p>
+                <div class="flex gap-6">
+                    <a href="#" class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center hover:bg-red-600 transition-all group"><i class="fab fa-facebook-f group-hover:scale-110 transition-transform"></i></a>
+                    <a href="#" class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center hover:bg-red-600 transition-all group"><i class="fab fa-instagram group-hover:scale-110 transition-transform"></i></a>
+                    <a href="#" class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center hover:bg-red-600 transition-all group"><i class="fab fa-x-twitter group-hover:scale-110 transition-transform"></i></a>
+                </div>
+            </div>
+            <div>
+                <h4 class="font-black text-white mb-10 uppercase tracking-widest text-xs">Quick Links</h4>
+                <ul class="space-y-6 text-sm font-bold tracking-widest">
+                    <li><a href="../index.html" class="hover:text-red-500 transition-colors uppercase">Home</a></li>
+                    <li><a href="../about/index.html" class="hover:text-red-500 transition-colors uppercase">About Us</a></li>
+                    <li><a href="../Our_Service/index.html" class="hover:text-red-500 transition-colors uppercase">Services</a></li>
+                    <li><a href="../Blog/index.html" class="hover:text-red-500 transition-colors uppercase">Blog</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-black text-white mb-10 uppercase tracking-widest text-xs">Services</h4>
+                <ul class="space-y-6 text-sm font-bold tracking-widest">
+                    <li><a href="#" class="hover:text-red-500 transition-colors uppercase">Vehicle Insurance</a></li>
+                    <li><a href="#" class="hover:text-red-500 transition-colors uppercase">Challan Payment</a></li>
+                    <li><a href="#" class="hover:text-red-500 transition-colors uppercase">PAN Card Services</a></li>
+                    <li><a href="#" class="hover:text-red-500 transition-colors uppercase">Health & Pollution</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-black text-white mb-10 uppercase tracking-widest text-xs">Contact</h4>
+                <ul class="space-y-6 text-sm font-bold tracking-widest">
+                    <li class="flex items-center gap-4"><i class="fas fa-phone text-red-600"></i> +91-XXXXXXXXXX</li>
+                    <li class="flex items-center gap-4"><i class="fas fa-envelope text-red-600"></i> CARE@DHAWANSERVICE.COM</li>
+                    <li class="flex items-center gap-4"><i class="fas fa-map-marker-alt text-red-600"></i> NEW DELHI, INDIA</li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto mt-32 pt-12 border-t border-white/5 text-center text-gray-600 text-[10px] font-black tracking-[0.3em] uppercase">
+            © 2026 Dhawan Service. All rights reserved. Precision in Documentation.
+        </div>
+    </footer>
+</body>
+</html>
