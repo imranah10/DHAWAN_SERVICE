@@ -66,12 +66,26 @@
                         </button>
                     </a>
                 </div>
+                <div class="lg:hidden flex items-center">
+                    <button id="mobile-toggle" class="text-white focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
             </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-black/95 backdrop-blur-xl border-t border-white/10 p-6 space-y-4">
+            <a href="../index.html" class="block text-sm font-black tracking-widest text-white uppercase">HOME</a>
+            <a href="../about/index.html" class="block text-sm font-black tracking-widest text-white uppercase">ABOUT US</a>
+            <a href="./index.html" class="block text-sm font-black tracking-widest text-white uppercase">SERVICES</a>
+            <a href="./OUR_presence.html" class="block text-sm font-black tracking-widest text-red-600 uppercase">LOCATIONS</a>
+            <a href="../Blog/index.html" class="block text-sm font-black tracking-widest text-white uppercase">BLOG</a>
+            <a href="../contact/index.html" class="block text-sm font-black tracking-widest text-white uppercase">CONTACT</a>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="relative w-full h-[75vh] flex items-center justify-center overflow-hidden">
+    <section class="relative w-full h-[60vh] md:h-[75vh] flex items-center justify-center overflow-hidden">
         <div class="absolute inset-0 z-0">
             <img src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?q=80&w=1920&auto=format&fit=crop" 
                  alt="Our Locations" class="w-full h-full object-cover">
@@ -79,179 +93,179 @@
         </div>
         
         <div class="relative z-10 text-center px-4 max-w-5xl">
-            <div class="mb-6 inline-block py-2 px-6 rounded-full bg-red-600/20 border border-red-600/30 backdrop-blur-md">
-                <span class="text-red-500 font-black tracking-[0.3em] text-[10px] uppercase">Serving Pan India</span>
+            <div class="mb-4 md:mb-6 inline-block py-2 px-6 rounded-full bg-red-600/20 border border-red-600/30 backdrop-blur-md">
+                <span class="text-red-500 font-black tracking-[0.3em] text-[8px] md:text-[10px] uppercase">Serving Pan India</span>
             </div>
-            <h1 class="text-6xl md:text-9xl font-black italic tracking-tighter text-white mb-8 uppercase leading-none">
-                OUR <span class="text-red-600 drop-shadow-[0_15px_15px_rgba(239,68,68,0.3)]">PRESENCE</span>
+            <h1 class="text-4xl sm:text-6xl md:text-9xl font-black italic tracking-tighter text-white mb-6 md:mb-8 uppercase leading-none">
+                OUR <span class="text-red-600 drop-shadow-[0_10px_10px_rgba(239,68,68,0.3)] md:drop-shadow-[0_15px_15px_rgba(239,68,68,0.3)]">PRESENCE</span>
             </h1>
-            <p class="text-xl md:text-2xl text-gray-300 font-bold italic tracking-wide uppercase max-w-3xl mx-auto leading-tight">
+            <p class="text-lg md:text-2xl text-gray-300 font-bold italic tracking-wide uppercase max-w-3xl mx-auto leading-tight">
                 Dhawan Service is expanding across India to provide you with seamless vehicle documentation.
             </p>
         </div>
     </section>
 
     <!-- Main Presence Content -->
-    <main class="py-32 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+    <main class="py-16 md:py-32 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
             
             <!-- Delhi NCR -->
-            <div class="presence-card rounded-[2.5rem] p-12">
-                <div class="w-16 h-16 bg-red-600/10 rounded-2xl flex items-center justify-center mb-8">
-                    <i class="fas fa-map-location-dot text-2xl text-red-600"></i>
+            <div class="presence-card rounded-[2rem] md:rounded-[2.5rem] p-8 md:p-12">
+                <div class="w-12 h-12 md:w-16 md:h-16 bg-red-600/10 rounded-2xl flex items-center justify-center mb-6 md:mb-8">
+                    <i class="fas fa-map-location-dot text-xl md:text-2xl text-red-600"></i>
                 </div>
-                <h3 class="text-3xl font-black italic mb-6 uppercase tracking-tighter">Delhi NCR</h3>
-                <ul class="space-y-4">
-                    <li><a href="./Location_Wise/mansarover_gardan.html" class="flex items-center gap-3 font-bold uppercase text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> MANSAROVER GARDEN</a></li>
-                    <li><a href="./Location_Wise/MODEL_TOWN.html" class="flex items-center gap-3 font-bold uppercase text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> MODEL TOWN</a></li>
-                    <li><a href="./Location_Wise/KARKARDOOMA.html" class="flex items-center gap-3 font-bold uppercase text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> KARKARDOOMA</a></li>
-                    <li><a href="./Location_Wise/VASANT_KUNJ.html" class="flex items-center gap-3 font-bold uppercase text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> VASANT KUNJ</a></li>
-                    <li><a href="./Location_Wise/EAST_OF_KAILASH.html" class="flex items-center gap-3 font-bold uppercase text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> EAST OF KAILASH</a></li>
-                    <li><a href="./Location_Wise/PITAMPURA.html" class="flex items-center gap-3 font-bold uppercase text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> PITAMPURA</a></li>
-                    <li><a href="./Location_Wise/DWARKA.html" class="flex items-center gap-3 font-bold uppercase text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> DWARKA</a></li>
-                    <li><a href="./Location_Wise/MALVIYA_NAGAR.html" class="flex items-center gap-3 font-bold uppercase text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> MALVIYA NAGAR</a></li>
-                    <li><a href="./Location_Wise/Rohini.html" class="flex items-center gap-3 font-bold uppercase text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> ROHINI</a></li>
-                    <li><a href="./Location_Wise/Vikaspuri.html" class="flex items-center gap-3 font-bold uppercase text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> VIKASPURI</a></li>
-                    <li><a href="./Location_Wise/Shahbad_Dairy.html" class="flex items-center gap-3 font-bold uppercase text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> SHAHBAD DAIRY</a></li>
+                <h3 class="text-2xl md:text-3xl font-black italic mb-4 md:mb-6 uppercase tracking-tighter">Delhi NCR</h3>
+                <ul class="space-y-3 md:space-y-4">
+                    <li><a href="./Location_Wise/mansarover_gardan.html" class="flex items-center gap-3 font-bold uppercase text-[10px] md:text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> MANSAROVER GARDEN</a></li>
+                    <li><a href="./Location_Wise/MODEL_TOWN.html" class="flex items-center gap-3 font-bold uppercase text-[10px] md:text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> MODEL TOWN</a></li>
+                    <li><a href="./Location_Wise/KARKARDOOMA.html" class="flex items-center gap-3 font-bold uppercase text-[10px] md:text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> KARKARDOOMA</a></li>
+                    <li><a href="./Location_Wise/VASANT_KUNJ.html" class="flex items-center gap-3 font-bold uppercase text-[10px] md:text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> VASANT KUNJ</a></li>
+                    <li><a href="./Location_Wise/EAST_OF_KAILASH.html" class="flex items-center gap-3 font-bold uppercase text-[10px] md:text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> EAST OF KAILASH</a></li>
+                    <li><a href="./Location_Wise/PITAMPURA.html" class="flex items-center gap-3 font-bold uppercase text-[10px] md:text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> PITAMPURA</a></li>
+                    <li><a href="./Location_Wise/DWARKA.html" class="flex items-center gap-3 font-bold uppercase text-[10px] md:text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> DWARKA</a></li>
+                    <li><a href="./Location_Wise/MALVIYA_NAGAR.html" class="flex items-center gap-3 font-bold uppercase text-[10px] md:text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> MALVIYA NAGAR</a></li>
+                    <li><a href="./Location_Wise/Rohini.html" class="flex items-center gap-3 font-bold uppercase text-[10px] md:text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> ROHINI</a></li>
+                    <li><a href="./Location_Wise/Vikaspuri.html" class="flex items-center gap-3 font-bold uppercase text-[10px] md:text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> VIKASPURI</a></li>
+                    <li><a href="./Location_Wise/Shahbad_Dairy.html" class="flex items-center gap-3 font-bold uppercase text-[10px] md:text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> SHAHBAD DAIRY</a></li>
                 </ul>
             </div>
 
             <!-- Haryana -->
-            <div class="presence-card rounded-[2.5rem] p-12">
-                <div class="w-16 h-16 bg-red-600/10 rounded-2xl flex items-center justify-center mb-8">
-                    <i class="fas fa-map-location-dot text-2xl text-red-600"></i>
+            <div class="presence-card rounded-[2rem] md:rounded-[2.5rem] p-8 md:p-12">
+                <div class="w-12 h-12 md:w-16 md:h-16 bg-red-600/10 rounded-2xl flex items-center justify-center mb-6 md:mb-8">
+                    <i class="fas fa-map-location-dot text-xl md:text-2xl text-red-600"></i>
                 </div>
-                <h3 class="text-3xl font-black italic mb-6 uppercase tracking-tighter">Haryana</h3>
-                <ul class="space-y-4">
-                    <li><a href="./Location_Wise/GURUGRAM_SECTOR_18.html" class="flex items-center gap-3 font-bold uppercase text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> GURUGRAM SECTOR 18</a></li>
-                    <li><a href="./Location_Wise/GURUGRAM_SECTOR_52.html" class="flex items-center gap-3 font-bold uppercase text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> GURUGRAM SECTOR 52</a></li>
-                    <li><a href="./Location_Wise/GURUGRAM_SECTOR_78.html" class="flex items-center gap-3 font-bold uppercase text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> GURUGRAM SECTOR 78</a></li>
-                    <li><a href="./Location_Wise/FARIDABAD.html" class="flex items-center gap-3 font-bold uppercase text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> FARIDABAD</a></li>
-                    <li><a href="./Location_Wise/PANCHKULA.html" class="flex items-center gap-3 font-bold uppercase text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> PANCHKULA</a></li>
-                    <li><a href="./Location_Wise/SONIPAT.html" class="flex items-center gap-3 font-bold uppercase text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> SONIPAT</a></li>
-                    <li><a href="./Location_Wise/PANIPAT.html" class="flex items-center gap-3 font-bold uppercase text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> PANIPAT</a></li>
-                    <li><a href="./Location_Wise/HISAR.html" class="flex items-center gap-3 font-bold uppercase text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> HISAR</a></li>
-                    <li><a href="./Location_Wise/KARNAL.html" class="flex items-center gap-3 font-bold uppercase text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> KARNAL</a></li>
-                    <li><a href="./Location_Wise/Gohana.html" class="flex items-center gap-3 font-bold uppercase text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> GOHANA</a></li>
-                    <li><a href="./Location_Wise/Manesar.html" class="flex items-center gap-3 font-bold uppercase text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> MANESAR</a></li>
-                    <li><a href="./Location_Wise/Sirsa.html" class="flex items-center gap-3 font-bold uppercase text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> SIRSA</a></li>
+                <h3 class="text-2xl md:text-3xl font-black italic mb-4 md:mb-6 uppercase tracking-tighter">Haryana</h3>
+                <ul class="space-y-3 md:space-y-4">
+                    <li><a href="./Location_Wise/GURUGRAM_SECTOR_18.html" class="flex items-center gap-3 font-bold uppercase text-[10px] md:text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> GURUGRAM SECTOR 18</a></li>
+                    <li><a href="./Location_Wise/GURUGRAM_SECTOR_52.html" class="flex items-center gap-3 font-bold uppercase text-[10px] md:text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> GURUGRAM SECTOR 52</a></li>
+                    <li><a href="./Location_Wise/GURUGRAM_SECTOR_78.html" class="flex items-center gap-3 font-bold uppercase text-[10px] md:text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> GURUGRAM SECTOR 78</a></li>
+                    <li><a href="./Location_Wise/FARIDABAD.html" class="flex items-center gap-3 font-bold uppercase text-[10px] md:text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> FARIDABAD</a></li>
+                    <li><a href="./Location_Wise/PANCHKULA.html" class="flex items-center gap-3 font-bold uppercase text-[10px] md:text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> PANCHKULA</a></li>
+                    <li><a href="./Location_Wise/SONIPAT.html" class="flex items-center gap-3 font-bold uppercase text-[10px] md:text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> SONIPAT</a></li>
+                    <li><a href="./Location_Wise/PANIPAT.html" class="flex items-center gap-3 font-bold uppercase text-[10px] md:text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> PANIPAT</a></li>
+                    <li><a href="./Location_Wise/HISAR.html" class="flex items-center gap-3 font-bold uppercase text-[10px] md:text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> HISAR</a></li>
+                    <li><a href="./Location_Wise/KARNAL.html" class="flex items-center gap-3 font-bold uppercase text-[10px] md:text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> KARNAL</a></li>
+                    <li><a href="./Location_Wise/Gohana.html" class="flex items-center gap-3 font-bold uppercase text-[10px] md:text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> GOHANA</a></li>
+                    <li><a href="./Location_Wise/Manesar.html" class="flex items-center gap-3 font-bold uppercase text-[10px] md:text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> MANESAR</a></li>
+                    <li><a href="./Location_Wise/Sirsa.html" class="flex items-center gap-3 font-bold uppercase text-[10px] md:text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> SIRSA</a></li>
                 </ul>
             </div>
 
             <!-- Punjab & Chandigarh -->
-            <div class="presence-card rounded-[2.5rem] p-12">
-                <div class="w-16 h-16 bg-red-600/10 rounded-2xl flex items-center justify-center mb-8">
-                    <i class="fas fa-map-location-dot text-2xl text-red-600"></i>
+            <div class="presence-card rounded-[2rem] md:rounded-[2.5rem] p-8 md:p-12">
+                <div class="w-12 h-12 md:w-16 md:h-16 bg-red-600/10 rounded-2xl flex items-center justify-center mb-6 md:mb-8">
+                    <i class="fas fa-map-location-dot text-xl md:text-2xl text-red-600"></i>
                 </div>
-                <h3 class="text-3xl font-black italic mb-6 uppercase tracking-tighter">Punjab</h3>
-                <ul class="space-y-4">
-                    <li><a href="./Location_Wise/LUDHIANA.html" class="flex items-center gap-3 font-bold uppercase text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> LUDHIANA</a></li>
-                    <li><a href="./Location_Wise/MOHALI.html" class="flex items-center gap-3 font-bold uppercase text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> MOHALI</a></li>
-                    <li><a href="./Location_Wise/JALANDHAR.html" class="flex items-center gap-3 font-bold uppercase text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> JALANDHAR</a></li>
-                    <li><a href="./Location_Wise/CHANDIGARH.html" class="flex items-center gap-3 font-bold uppercase text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> CHANDIGARH</a></li>
-                    <li><a href="./Location_Wise/Amritsar.html" class="flex items-center gap-3 font-bold uppercase text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> AMRITSAR</a></li>
-                    <li><a href="./Location_Wise/Patiala.html" class="flex items-center gap-3 font-bold uppercase text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> PATIALA</a></li>
-                    <li><a href="./Location_Wise/Sangrur.html" class="flex items-center gap-3 font-bold uppercase text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> SANGRUR</a></li>
+                <h3 class="text-2xl md:text-3xl font-black italic mb-4 md:mb-6 uppercase tracking-tighter">Punjab</h3>
+                <ul class="space-y-3 md:space-y-4">
+                    <li><a href="./Location_Wise/LUDHIANA.html" class="flex items-center gap-3 font-bold uppercase text-[10px] md:text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> LUDHIANA</a></li>
+                    <li><a href="./Location_Wise/MOHALI.html" class="flex items-center gap-3 font-bold uppercase text-[10px] md:text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> MOHALI</a></li>
+                    <li><a href="./Location_Wise/JALANDHAR.html" class="flex items-center gap-3 font-bold uppercase text-[10px] md:text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> JALANDHAR</a></li>
+                    <li><a href="./Location_Wise/CHANDIGARH.html" class="flex items-center gap-3 font-bold uppercase text-[10px] md:text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> CHANDIGARH</a></li>
+                    <li><a href="./Location_Wise/Amritsar.html" class="flex items-center gap-3 font-bold uppercase text-[10px] md:text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> AMRITSAR</a></li>
+                    <li><a href="./Location_Wise/Patiala.html" class="flex items-center gap-3 font-bold uppercase text-[10px] md:text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> PATIALA</a></li>
+                    <li><a href="./Location_Wise/Sangrur.html" class="flex items-center gap-3 font-bold uppercase text-[10px] md:text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> SANGRUR</a></li>
                 </ul>
             </div>
 
             <!-- Uttar Pradesh & Uttarakhand -->
-            <div class="presence-card rounded-[2.5rem] p-12">
-                <div class="w-16 h-16 bg-red-600/10 rounded-2xl flex items-center justify-center mb-8">
-                    <i class="fas fa-map-location-dot text-2xl text-red-600"></i>
+            <div class="presence-card rounded-[2rem] md:rounded-[2.5rem] p-8 md:p-12">
+                <div class="w-12 h-12 md:w-16 md:h-16 bg-red-600/10 rounded-2xl flex items-center justify-center mb-6 md:mb-8">
+                    <i class="fas fa-map-location-dot text-xl md:text-2xl text-red-600"></i>
                 </div>
-                <h3 class="text-3xl font-black italic mb-6 uppercase tracking-tighter">UP & Uttarakhand</h3>
-                <ul class="space-y-4">
-                    <li><a href="./Location_Wise/NOIDA.html" class="flex items-center gap-3 font-bold uppercase text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> NOIDA</a></li>
-                    <li><a href="./Location_Wise/noida_sector_52.html" class="flex items-center gap-3 font-bold uppercase text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> NOIDA SECTOR 52</a></li>
-                    <li><a href="./Location_Wise/OLD_Ghaziabad.html" class="flex items-center gap-3 font-bold uppercase text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> OLD GHAZIABAD</a></li>
-                    <li><a href="./Location_Wise/vasundhara.html" class="flex items-center gap-3 font-bold uppercase text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> VASUNDHARA</a></li>
-                    <li><a href="./Location_Wise/meerut.html" class="flex items-center gap-3 font-bold uppercase text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> MEERUT</a></li>
-                    <li><a href="./Location_Wise/KANPUR.html" class="flex items-center gap-3 font-bold uppercase text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> KANPUR</a></li>
-                    <li><a href="./Location_Wise/bareilly.html" class="flex items-center gap-3 font-bold uppercase text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> BAREILLY</a></li>
-                    <li><a href="./Location_Wise/gonda.html" class="flex items-center gap-3 font-bold uppercase text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> GONDA</a></li>
-                    <li><a href="./Location_Wise/Faizabad.html" class="flex items-center gap-3 font-bold uppercase text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> FAIZABAD</a></li>
-                    <li><a href="./Location_Wise/DEHRADUN.html" class="flex items-center gap-3 font-bold uppercase text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> DEHRADUN</a></li>
-                    <li><a href="./Location_Wise/Haldwani.html" class="flex items-center gap-3 font-bold uppercase text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> HALDWANI</a></li>
+                <h3 class="text-2xl md:text-3xl font-black italic mb-4 md:mb-6 uppercase tracking-tighter">UP & Uttarakhand</h3>
+                <ul class="space-y-3 md:space-y-4">
+                    <li><a href="./Location_Wise/NOIDA.html" class="flex items-center gap-3 font-bold uppercase text-[10px] md:text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> NOIDA</a></li>
+                    <li><a href="./Location_Wise/noida_sector_52.html" class="flex items-center gap-3 font-bold uppercase text-[10px] md:text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> NOIDA SECTOR 52</a></li>
+                    <li><a href="./Location_Wise/OLD_Ghaziabad.html" class="flex items-center gap-3 font-bold uppercase text-[10px] md:text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> OLD GHAZIABAD</a></li>
+                    <li><a href="./Location_Wise/vasundhara.html" class="flex items-center gap-3 font-bold uppercase text-[10px] md:text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> VASUNDHARA</a></li>
+                    <li><a href="./Location_Wise/meerut.html" class="flex items-center gap-3 font-bold uppercase text-[10px] md:text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> MEERUT</a></li>
+                    <li><a href="./Location_Wise/KANPUR.html" class="flex items-center gap-3 font-bold uppercase text-[10px] md:text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> KANPUR</a></li>
+                    <li><a href="./Location_Wise/bareilly.html" class="flex items-center gap-3 font-bold uppercase text-[10px] md:text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> BAREILLY</a></li>
+                    <li><a href="./Location_Wise/gonda.html" class="flex items-center gap-3 font-bold uppercase text-[10px] md:text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> GONDA</a></li>
+                    <li><a href="./Location_Wise/Faizabad.html" class="flex items-center gap-3 font-bold uppercase text-[10px] md:text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> FAIZABAD</a></li>
+                    <li><a href="./Location_Wise/DEHRADUN.html" class="flex items-center gap-3 font-bold uppercase text-[10px] md:text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> DEHRADUN</a></li>
+                    <li><a href="./Location_Wise/Haldwani.html" class="flex items-center gap-3 font-bold uppercase text-[10px] md:text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> HALDWANI</a></li>
                 </ul>
             </div>
 
             <!-- Rajasthan -->
-            <div class="presence-card rounded-[2.5rem] p-12">
-                <div class="w-16 h-16 bg-red-600/10 rounded-2xl flex items-center justify-center mb-8">
-                    <i class="fas fa-map-location-dot text-2xl text-red-600"></i>
+            <div class="presence-card rounded-[2rem] md:rounded-[2.5rem] p-8 md:p-12">
+                <div class="w-12 h-12 md:w-16 md:h-16 bg-red-600/10 rounded-2xl flex items-center justify-center mb-6 md:mb-8">
+                    <i class="fas fa-map-location-dot text-xl md:text-2xl text-red-600"></i>
                 </div>
-                <h3 class="text-3xl font-black italic mb-6 uppercase tracking-tighter">Rajasthan</h3>
-                <ul class="space-y-4">
-                    <li><a href="./Location_Wise/VAISHALI_NAGAR.html" class="flex items-center gap-3 font-bold uppercase text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> VAISHALI NAGAR</a></li>
-                    <li><a href="./Location_Wise/GOPALPURA.html" class="flex items-center gap-3 font-bold uppercase text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> GOPALPURA</a></li>
-                    <li><a href="./Location_Wise/MANSAROVAR.html" class="flex items-center gap-3 font-bold uppercase text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> MANSAROVAR</a></li>
-                    <li><a href="./Location_Wise/SIKAR.html" class="flex items-center gap-3 font-bold uppercase text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> SIKAR</a></li>
-                    <li><a href="./Location_Wise/Jaipur_Gopalpura.html" class="flex items-center gap-3 font-bold uppercase text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> JAIPUR GOPALPURA</a></li>
-                    <li><a href="./Location_Wise/Jaipur_Mansarovar.html" class="flex items-center gap-3 font-bold uppercase text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> JAIPUR MANSAROVAR</a></li>
+                <h3 class="text-2xl md:text-3xl font-black italic mb-4 md:mb-6 uppercase tracking-tighter">Rajasthan</h3>
+                <ul class="space-y-3 md:space-y-4">
+                    <li><a href="./Location_Wise/VAISHALI_NAGAR.html" class="flex items-center gap-3 font-bold uppercase text-[10px] md:text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> VAISHALI NAGAR</a></li>
+                    <li><a href="./Location_Wise/GOPALPURA.html" class="flex items-center gap-3 font-bold uppercase text-[10px] md:text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> GOPALPURA</a></li>
+                    <li><a href="./Location_Wise/MANSAROVAR.html" class="flex items-center gap-3 font-bold uppercase text-[10px] md:text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> MANSAROVAR</a></li>
+                    <li><a href="./Location_Wise/SIKAR.html" class="flex items-center gap-3 font-bold uppercase text-[10px] md:text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> SIKAR</a></li>
+                    <li><a href="./Location_Wise/Jaipur_Gopalpura.html" class="flex items-center gap-3 font-bold uppercase text-[10px] md:text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> JAIPUR GOPALPURA</a></li>
+                    <li><a href="./Location_Wise/Jaipur_Mansarovar.html" class="flex items-center gap-3 font-bold uppercase text-[10px] md:text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> JAIPUR MANSAROVAR</a></li>
                 </ul>
             </div>
 
             <!-- Gujarat -->
-            <div class="presence-card rounded-[2.5rem] p-12">
-                <div class="w-16 h-16 bg-red-600/10 rounded-2xl flex items-center justify-center mb-8">
-                    <i class="fas fa-map-location-dot text-2xl text-red-600"></i>
+            <div class="presence-card rounded-[2rem] md:rounded-[2.5rem] p-8 md:p-12">
+                <div class="w-12 h-12 md:w-16 md:h-16 bg-red-600/10 rounded-2xl flex items-center justify-center mb-6 md:mb-8">
+                    <i class="fas fa-map-location-dot text-xl md:text-2xl text-red-600"></i>
                 </div>
-                <h3 class="text-3xl font-black italic mb-6 uppercase tracking-tighter">Gujarat</h3>
-                <ul class="space-y-4">
-                    <li><a href="./Location_Wise/Ahmedabad.html" class="flex items-center gap-3 font-bold uppercase text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> AHMEDABAD</a></li>
-                    <li><a href="./Location_Wise/Surat.html" class="flex items-center gap-3 font-bold uppercase text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> SURAT</a></li>
-                    <li><a href="./Location_Wise/Vadodara.html" class="flex items-center gap-3 font-bold uppercase text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> VADODARA</a></li>
-                    <li><a href="./Location_Wise/Jamnagar.html" class="flex items-center gap-3 font-bold uppercase text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> JAMNAGAR</a></li>
-                    <li><a href="./Location_Wise/Mehsana.html" class="flex items-center gap-3 font-bold uppercase text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> MEHSANA</a></li>
+                <h3 class="text-2xl md:text-3xl font-black italic mb-4 md:mb-6 uppercase tracking-tighter">Gujarat</h3>
+                <ul class="space-y-3 md:space-y-4">
+                    <li><a href="./Location_Wise/Ahmedabad.html" class="flex items-center gap-3 font-bold uppercase text-[10px] md:text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> AHMEDABAD</a></li>
+                    <li><a href="./Location_Wise/Surat.html" class="flex items-center gap-3 font-bold uppercase text-[10px] md:text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> SURAT</a></li>
+                    <li><a href="./Location_Wise/Vadodara.html" class="flex items-center gap-3 font-bold uppercase text-[10px] md:text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> VADODARA</a></li>
+                    <li><a href="./Location_Wise/Jamnagar.html" class="flex items-center gap-3 font-bold uppercase text-[10px] md:text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> JAMNAGAR</a></li>
+                    <li><a href="./Location_Wise/Mehsana.html" class="flex items-center gap-3 font-bold uppercase text-[10px] md:text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> MEHSANA</a></li>
                 </ul>
             </div>
 
             <!-- Maharashtra -->
-            <div class="presence-card rounded-[2.5rem] p-12">
-                <div class="w-16 h-16 bg-red-600/10 rounded-2xl flex items-center justify-center mb-8">
-                    <i class="fas fa-map-location-dot text-2xl text-red-600"></i>
+            <div class="presence-card rounded-[2rem] md:rounded-[2.5rem] p-8 md:p-12">
+                <div class="w-12 h-12 md:w-16 md:h-16 bg-red-600/10 rounded-2xl flex items-center justify-center mb-6 md:mb-8">
+                    <i class="fas fa-map-location-dot text-xl md:text-2xl text-red-600"></i>
                 </div>
-                <h3 class="text-3xl font-black italic mb-6 uppercase tracking-tighter">Maharashtra</h3>
-                <ul class="space-y-4">
-                    <li><a href="./Location_Wise/Pune.html" class="flex items-center gap-3 font-bold uppercase text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> PUNE</a></li>
-                    <li><a href="./Location_Wise/Navi_Mumbai.html" class="flex items-center gap-3 font-bold uppercase text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> NAVI MUMBAI</a></li>
-                    <li><a href="./Location_Wise/Jalgaon.html" class="flex items-center gap-3 font-bold uppercase text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> JALGAON</a></li>
+                <h3 class="text-2xl md:text-3xl font-black italic mb-4 md:mb-6 uppercase tracking-tighter">Maharashtra</h3>
+                <ul class="space-y-3 md:space-y-4">
+                    <li><a href="./Location_Wise/Pune.html" class="flex items-center gap-3 font-bold uppercase text-[10px] md:text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> PUNE</a></li>
+                    <li><a href="./Location_Wise/Navi_Mumbai.html" class="flex items-center gap-3 font-bold uppercase text-[10px] md:text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> NAVI MUMBAI</a></li>
+                    <li><a href="./Location_Wise/Jalgaon.html" class="flex items-center gap-3 font-bold uppercase text-[10px] md:text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> JALGAON</a></li>
                 </ul>
             </div>
 
             <!-- South & East India -->
-            <div class="presence-card rounded-[2.5rem] p-12">
-                <div class="w-16 h-16 bg-red-600/10 rounded-2xl flex items-center justify-center mb-8">
-                    <i class="fas fa-map-location-dot text-2xl text-red-600"></i>
+            <div class="presence-card rounded-[2rem] md:rounded-[2.5rem] p-8 md:p-12">
+                <div class="w-12 h-12 md:w-16 md:h-16 bg-red-600/10 rounded-2xl flex items-center justify-center mb-6 md:mb-8">
+                    <i class="fas fa-map-location-dot text-xl md:text-2xl text-red-600"></i>
                 </div>
-                <h3 class="text-3xl font-black italic mb-6 uppercase tracking-tighter">South & East India</h3>
-                <ul class="space-y-4">
-                    <li><a href="./Location_Wise/BENGALURU.html" class="flex items-center gap-3 font-bold uppercase text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> BENGALURU</a></li>
-                    <li><a href="./Location_Wise/Sarjapura.html" class="flex items-center gap-3 font-bold uppercase text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> SARJAPURA</a></li>
-                    <li><a href="./Location_Wise/Coimbatore.html" class="flex items-center gap-3 font-bold uppercase text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> COIMBATORE</a></li>
-                    <li><a href="./Location_Wise/Kolkata.html" class="flex items-center gap-3 font-bold uppercase text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> KOLKATA</a></li>
-                    <li><a href="./Location_Wise/PATNA.html" class="flex items-center gap-3 font-bold uppercase text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> PATNA</a></li>
-                    <li><a href="./Location_Wise/DHANBAD.html" class="flex items-center gap-3 font-bold uppercase text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> DHANBAD</a></li>
-                    <li><a href="./Location_Wise/RANCHI.html" class="flex items-center gap-3 font-bold uppercase text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> RANCHI</a></li>
-                    <li><a href="./Location_Wise/DHANBAD_RANCHI.html" class="flex items-center gap-3 font-bold uppercase text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> DHANBAD & RANCHI</a></li>
-                    <li><a href="./Location_Wise/Mesra.html" class="flex items-center gap-3 font-bold uppercase text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> MESRA</a></li>
-                    <li><a href="./Location_Wise/Sambalpur.html" class="flex items-center gap-3 font-bold uppercase text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> SAMBALPUR</a></li>
-                    <li><a href="./Location_Wise/RAIPUR.html" class="flex items-center gap-3 font-bold uppercase text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> RAIPUR</a></li>
+                <h3 class="text-2xl md:text-3xl font-black italic mb-4 md:mb-6 uppercase tracking-tighter">South & East India</h3>
+                <ul class="space-y-3 md:space-y-4">
+                    <li><a href="./Location_Wise/BENGALURU.html" class="flex items-center gap-3 font-bold uppercase text-[10px] md:text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> BENGALURU</a></li>
+                    <li><a href="./Location_Wise/Sarjapura.html" class="flex items-center gap-3 font-bold uppercase text-[10px] md:text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> SARJAPURA</a></li>
+                    <li><a href="./Location_Wise/Coimbatore.html" class="flex items-center gap-3 font-bold uppercase text-[10px] md:text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> COIMBATORE</a></li>
+                    <li><a href="./Location_Wise/Kolkata.html" class="flex items-center gap-3 font-bold uppercase text-[10px] md:text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> KOLKATA</a></li>
+                    <li><a href="./Location_Wise/PATNA.html" class="flex items-center gap-3 font-bold uppercase text-[10px] md:text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> PATNA</a></li>
+                    <li><a href="./Location_Wise/DHANBAD.html" class="flex items-center gap-3 font-bold uppercase text-[10px] md:text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> DHANBAD</a></li>
+                    <li><a href="./Location_Wise/RANCHI.html" class="flex items-center gap-3 font-bold uppercase text-[10px] md:text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> RANCHI</a></li>
+                    <li><a href="./Location_Wise/DHANBAD_RANCHI.html" class="flex items-center gap-3 font-bold uppercase text-[10px] md:text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> DHANBAD & RANCHI</a></li>
+                    <li><a href="./Location_Wise/Mesra.html" class="flex items-center gap-3 font-bold uppercase text-[10px] md:text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> MESRA</a></li>
+                    <li><a href="./Location_Wise/Sambalpur.html" class="flex items-center gap-3 font-bold uppercase text-[10px] md:text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> SAMBALPUR</a></li>
+                    <li><a href="./Location_Wise/RAIPUR.html" class="flex items-center gap-3 font-bold uppercase text-[10px] md:text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> RAIPUR</a></li>
                 </ul>
             </div>
 
             <!-- Others -->
-            <div class="presence-card rounded-[2.5rem] p-12">
-                <div class="w-16 h-16 bg-red-600/10 rounded-2xl flex items-center justify-center mb-8">
-                    <i class="fas fa-map-location-dot text-2xl text-red-600"></i>
+            <div class="presence-card rounded-[2rem] md:rounded-[2.5rem] p-8 md:p-12">
+                <div class="w-12 h-12 md:w-16 md:h-16 bg-red-600/10 rounded-2xl flex items-center justify-center mb-6 md:mb-8">
+                    <i class="fas fa-map-location-dot text-xl md:text-2xl text-red-600"></i>
                 </div>
-                <h3 class="text-3xl font-black italic mb-6 uppercase tracking-tighter">Other Regions</h3>
-                <ul class="space-y-4">
-                    <li><a href="./Location_Wise/SHIMLA.html" class="flex items-center gap-3 font-bold uppercase text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> SHIMLA</a></li>
-                    <li><a href="./Location_Wise/JAMMU.html" class="flex items-center gap-3 font-bold uppercase text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> JAMMU</a></li>
-                    <li><a href="./Location_Wise/Anantnag.html" class="flex items-center gap-3 font-bold uppercase text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> ANANTNAG</a></li>
-                    <li><a href="./Location_Wise/Khatkhati.html" class="flex items-center gap-3 font-bold uppercase text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> KHATKHATI</a></li>
+                <h3 class="text-2xl md:text-3xl font-black italic mb-4 md:mb-6 uppercase tracking-tighter">Other Regions</h3>
+                <ul class="space-y-3 md:space-y-4">
+                    <li><a href="./Location_Wise/SHIMLA.html" class="flex items-center gap-3 font-bold uppercase text-[10px] md:text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> SHIMLA</a></li>
+                    <li><a href="./Location_Wise/JAMMU.html" class="flex items-center gap-3 font-bold uppercase text-[10px] md:text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> JAMMU</a></li>
+                    <li><a href="./Location_Wise/Anantnag.html" class="flex items-center gap-3 font-bold uppercase text-[10px] md:text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> ANANTNAG</a></li>
+                    <li><a href="./Location_Wise/Khatkhati.html" class="flex items-center gap-3 font-bold uppercase text-[10px] md:text-xs tracking-widest"><i class="fas fa-chevron-right text-[8px] text-red-600"></i> KHATKHATI</a></li>
                 </ul>
             </div>
 
@@ -311,6 +325,14 @@
                 navbar.classList.remove('navbar-scrolled');
             }
         });
+
+        const mobileToggle = document.getElementById('mobile-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        if (mobileToggle && mobileMenu) {
+            mobileToggle.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
     </script>
 </body>
 </html>
