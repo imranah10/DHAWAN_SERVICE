@@ -95,8 +95,8 @@
             header p { font-size: 1.5rem; }
         }
         .section-heading {
-            font-size: 2.2rem;
-            font-weight: 900;
+            font-size: 1.8rem;
+            font-weight: 800;
             font-style: italic;
             text-transform: uppercase;
             letter-spacing: -0.04em;
@@ -105,7 +105,7 @@
             color: #000;
         }
         @media (min-width: 768px) {
-            .section-heading { font-size: 3rem; margin: 100px 0 60px 0; }
+            .section-heading { font-size: 2.5rem; margin: 100px 0 60px 0; }
         }
         .blog-grid {
             display: grid;
@@ -152,7 +152,7 @@
             padding: 8px 20px;
             border-radius: 100px;
             font-size: 0.7rem;
-            font-weight: 900;
+            font-weight: 800;
             letter-spacing: 0.2em;
             text-transform: uppercase;
             z-index: 2;
@@ -161,8 +161,8 @@
             padding: 40px;
         }
         .blog-title {
-            font-size: 1.8rem;
-            font-weight: 800;
+            font-size: 1.5rem;
+            font-weight: 700;
             line-height: 1.2;
             margin-bottom: 20px;
             text-transform: uppercase;
@@ -171,9 +171,9 @@
         }
         .blog-excerpt {
             color: #666;
-            font-size: 1.1rem;
+            font-size: 1.05rem;
             margin-bottom: 40px;
-            font-weight: 500;
+            font-weight: 400;
         }
         .read-more {
             display: inline-flex;
@@ -181,7 +181,7 @@
             gap: 15px;
             color: #ef4444;
             text-decoration: none;
-            font-weight: 900;
+            font-weight: 700;
             font-size: 0.8rem;
             letter-spacing: 0.2em;
             text-transform: uppercase;
@@ -205,7 +205,7 @@
         }
         footer p {
             color: #555;
-            font-weight: 700;
+            font-weight: 500;
             letter-spacing: 0.1em;
             text-transform: uppercase;
             font-size: 0.8rem;
@@ -260,26 +260,35 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="relative w-full h-[60vh] md:h-[75vh] flex items-center justify-center overflow-hidden">
-        <div class="absolute z-0">
-            <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?q=80&w=1920&auto=format&fit=crop" 
-                 alt="Dhawan Blog" class="w-full h-full object-cover">
-            <div class="absolute inset-0 bg-gradient-to-b from-black/70 via-black/20 to-white"></div>
-        </div>
+ <!-- Hero Section -->
+<section class="relative w-full h-[60vh] md:h-[75vh] flex items-center justify-center overflow-hidden">
+    <div class="absolute inset-0 z-0">
+        <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?q=80&w=1920&auto=format&fit=crop" 
+             alt="Dhawan Blog" class="w-full h-full object-cover">
+        <div class="absolute  bg-gradient-to-b from-black/70 via-black/30 to-white"></div>
+    </div>
+    
+    <div class="relative z-10 text-center px-4 max-w-3xl mx-auto">
         
-        <div class="relative z-10 text-center px-4 max-w-5xl">
-            <div class="mb-4 md:mb-6 inline-block py-2 px-6 rounded-full bg-red-600/20 border border-red-600/30 backdrop-blur-md">
-                <span class="text-red-500 font-black tracking-[0.3em] text-[8px] md:text-[10px] uppercase">Knowledge & Insights</span>
-            </div>
-            <h1 class="text-4xl sm:text-6xl md:text-9xl font-black italic tracking-tighter text-white mb-6 md:mb-8 uppercase leading-none">
-                DHAWAN <span class="text-red-600 drop-shadow-[0_10px_10px_rgba(239,68,68,0.3)] md:drop-shadow-[0_15px_15px_rgba(239,68,68,0.3)]">BLOG</span>
-            </h1>
-            <p class="text-lg md:text-2xl text-white font-bold italic tracking-wide uppercase max-w-3xl mx-auto leading-tight drop-shadow-lg">
-                Your Ultimate Guide to Vehicle Insurance, Challan Payments & Documentation
-            </p>
+        <!-- Tag -->
+        <div class="mb-3 inline-block py-1 px-4 rounded-full bg-red-600/20 border border-red-600/30 backdrop-blur-md">
+            <span class="text-red-400 font-medium tracking-widest text-[9px] md:text-[11px] uppercase">
+                Knowledge & Insights
+            </span>
         </div>
-    </section>
+
+        <!-- Heading -->
+        <h1 class="text-2xl sm:text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white mb-3 leading-tight">
+            Dhawan <span class="text-red-500">Blog</span>
+        </h1>
+
+        <!-- Sub Text -->
+        <p class="text-xs sm:text-sm md:text-base lg:text-lg text-gray-200 font-normal max-w-xl mx-auto leading-relaxed">
+            Your guide to vehicle insurance, challan payments, and documentation.
+        </p>
+
+    </div>
+</section>
 
     <main class="container bg-zinc-50 rounded-[3rem] -mt-10 relative z-20 shadow-2xl py-20 px-6 md:px-12">
         <h2 class="section-heading">LATEST <span class="text-red-600">INSIGHTS</span></h2>
