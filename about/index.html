@@ -145,8 +145,12 @@ pan India car detailing brand">
         
         /* Navbar scroll effect - FIXED */
         .navbar-scrolled {
-            background-color: rgba(0, 0, 0, 0.95) !important;
+            background-color: rgba(255, 255, 255, 0.95) !important;
             backdrop-filter: blur(10px);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+        .navbar-scrolled .text-white {
+            color: #000 !important;
         }
 
         /* Mobile menu animation */
@@ -157,7 +161,7 @@ pan India car detailing brand">
         }
         
         .mobile-menu.active {
-            max-height: 500px;
+            max-height: 600px;
         }
         
         /* Mobile dropdown animation */
@@ -177,7 +181,7 @@ pan India car detailing brand">
             width: 25px;
             height: 3px;
             margin: 5px auto;
-            background-color: #fff;
+            background-color: #000;
             transition: all 0.3s ease-in-out;
         }
         
@@ -207,29 +211,28 @@ pan India car detailing brand">
         }
     </style>
 </head>
-<body class="min-h-screen bg-black text-white">
+<body class="min-h-screen bg-white text-black">
 
     <!-- Navbar -->
     <nav id="site-navbar" class="fixed w-full z-50 bg-transparent transition-all duration-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-24">
                 <a href="../index.html" class="flex-shrink-0 flex items-center">
-                    <span class="text-3xl font-black tracking-tighter text-white uppercase italic"><span class="text-red-600">DHAWAN</span> SERVICE</span>
+                    <span class="text-3xl font-black tracking-tighter text-black uppercase italic"><span class="text-red-600">DHAWAN</span> SERVICE</span>
                 </a>
                 
                 <!-- Desktop Menu -->
                 <div id="desktop-menu" class="hidden lg:flex items-center space-x-10 absolute left-1/2 transform -translate-x-1/2">
-                    <a href="../index.html" class="text-xs font-black tracking-[0.2em] text-white hover:text-red-500 transition-colors uppercase">HOME</a>
+                    <a href="../index.html" class="text-xs font-black tracking-[0.2em] text-black hover:text-red-500 transition-colors uppercase">HOME</a>
                     <a href="./index.html" class="text-xs font-black tracking-[0.2em] text-red-600 uppercase">ABOUT US</a>
-                    <a href="../Our_Service/index.html" class="text-xs font-black tracking-[0.2em] text-white hover:text-red-500 transition-colors uppercase">SERVICES</a>
-                    <a href="../Blog/index.html" class="text-xs font-black tracking-[0.2em] text-white hover:text-red-500 transition-colors uppercase">BLOG</a>
-                    <a href="../contact/index.html" class="text-xs font-black tracking-[0.2em] text-white hover:text-red-500 transition-colors uppercase">CONTACT</a>
+                    <a href="../Our_Service/index.html" class="text-xs font-black tracking-[0.2em] text-black hover:text-red-500 transition-colors uppercase">SERVICES</a>
+                    <a href="../Blog/index.html" class="text-xs font-black tracking-[0.2em] text-black hover:text-red-500 transition-colors uppercase">BLOG</a>
                 </div>
 
                 <div class="hidden lg:block">
                     <a href="../contact/index.html">
                         <button class="bg-red-600 text-white px-8 py-3 rounded-2xl text-xs font-black tracking-[0.2em] hover:bg-red-700 transition-all transform hover:scale-105 shadow-lg shadow-red-600/20 uppercase">
-                            GET STARTED
+                            CONTACT US
                         </button>
                     </a>
                 </div>
@@ -246,13 +249,13 @@ pan India car detailing brand">
         </div>
 
         <!-- Mobile Menu -->
-        <div id="mobile-menu" class="mobile-menu lg:hidden hidden px-6 pt-10 pb-10 space-y-6 border-t border-white/5 bg-black/98 backdrop-blur-2xl">
-            <a href="../index.html" class="block text-2xl font-black italic tracking-tighter text-white hover:text-red-600 transition-colors uppercase">Home</a>
+        <div id="mobile-menu" class="mobile-menu lg:hidden hidden px-6 pt-10 pb-10 space-y-6 border-t border-gray-100 bg-white/98 backdrop-blur-2xl">
+            <a href="../index.html" class="block text-2xl font-black italic tracking-tighter text-black hover:text-red-600 transition-colors uppercase">Home</a>
             <a href="./index.html" class="block text-2xl font-black italic tracking-tighter text-red-600 transition-colors uppercase">About Us</a>
-            <a href="../Our_Service/index.html" class="block text-2xl font-black italic tracking-tighter text-white hover:text-red-600 transition-colors uppercase">Services</a>
-            <a href="../Blog/index.html" class="block text-2xl font-black italic tracking-tighter text-white hover:text-red-600 transition-colors uppercase">Blog</a>
+            <a href="../Our_Service/index.html" class="block text-2xl font-black italic tracking-tighter text-black hover:text-red-600 transition-colors uppercase">Services</a>
+            <a href="../Blog/index.html" class="block text-2xl font-black italic tracking-tighter text-black hover:text-red-600 transition-colors uppercase">Blog</a>
             <a href="../contact/index.html" class="block pt-6">
-                <button class="w-full bg-red-600 text-white py-5 rounded-2xl font-black tracking-widest uppercase text-xs">Get Started</button>
+                <button class="w-full bg-red-600 text-white py-5 rounded-2xl font-black tracking-widest uppercase text-xs">Contact Us</button>
             </a>
         </div>
     </nav>
@@ -279,14 +282,14 @@ pan India car detailing brand">
     </section>
 
     <!-- Who We Are Section -->
-    <section class="relative bg-black text-white py-20 md:py-32 px-4 sm:px-6 md:px-16 overflow-hidden">
+    <section class="relative bg-white text-black py-20 md:py-32 px-4 sm:px-6 md:px-16 overflow-hidden">
         <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-20 items-center">
             <div class="relative group order-2 lg:order-1">
-                <div class="absolute -inset-4 bg-red-600/10 rounded-[2rem] md:rounded-[3rem] blur-3xl group-hover:bg-red-600/20 transition-all duration-1000"></div>
-                <div class="relative rounded-[2rem] md:rounded-[3rem] overflow-hidden shadow-2xl border border-white/10">
+                <div class="absolute -inset-4 bg-red-600/5 rounded-[2rem] md:rounded-[3rem] blur-3xl group-hover:bg-red-600/10 transition-all duration-1000"></div>
+                <div class="relative rounded-[2rem] md:rounded-[3rem] overflow-hidden shadow-2xl border border-gray-100">
                     <img src="https://images.unsplash.com/photo-1560179707-f14e90ef3623?q=80&w=1200&auto=format&fit=crop" 
                          alt="About Dhawan Service" class="w-full h-[350px] sm:h-[450px] md:h-[650px] object-cover transition-transform duration-1000 group-hover:scale-105">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent"></div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
                     <div class="absolute bottom-6 left-6 md:bottom-12 md:left-12">
                         <div class="w-16 md:w-24 h-1 md:h-1.5 bg-red-600 mb-4 md:mb-6 rounded-full"></div>
                         <p class="text-white text-2xl md:text-4xl font-black italic tracking-tighter uppercase leading-tight">TRUSTED BY<br><span class="text-red-600">THOUSANDS</span></p>
@@ -295,27 +298,23 @@ pan India car detailing brand">
             </div>
             
             <div class="space-y-6 md:space-y-10 relative order-1 lg:order-2">
-                <div class="absolute -top-10 -left-5 md:-top-20 md:-left-10 text-white/[0.03] text-7xl sm:text-9xl md:text-[12rem] font-black -z-10 select-none uppercase tracking-tighter">STORY</div>
+                <div class="absolute -top-10 -left-5 md:-top-20 md:-left-10 text-gray-100 text-7xl sm:text-9xl md:text-[12rem] font-black -z-10 select-none uppercase tracking-tighter">STORY</div>
                 <h2 class="text-4xl sm:text-5xl md:text-7xl font-black italic mb-6 md:mb-8 leading-none uppercase tracking-tighter">
                     <span class="text-red-600">WHO WE</span> ARE
                 </h2>
                 
-                <div class="space-y-6 md:space-y-8 text-gray-400 leading-relaxed text-base md:text-lg font-medium">
-                    <p class="text-justify border-l-4 border-red-600 pl-6 md:pl-8 italic text-white/90">
+                <div class="space-y-6 md:space-y-8 text-gray-600 leading-relaxed text-base md:text-lg font-medium">
+                    <p class="text-justify border-l-4 border-red-600 pl-6 md:pl-8 italic text-black/90">
                         Dhawan Service was founded with a mission to simplify vehicle care. We understand that dealing with vehicle insurance, challans, and documentation can be time-consuming, frustrating, and costly.
                     </p>
                     
                     <p class="text-justify">
                         We provide a clear, upfront, and detailed estimate for every service, whether it's insurance for your bike, car, taxi, or commercial vehicle, or helping you with PAN card creation and vehicle health pollution certificates. Throughout the process, clients are kept fully informed, ensuring complete transparency and trust.
                     </p>
-                    
-                    <p class="text-justify hidden md:block">
-                        Our goal is simple: to deliver unmatched customer satisfaction through superior workmanship, modern technology, and reliable service. We are committed to making vehicle management hassle-free for everyone.
-                    </p>
                 </div>
 
                 <div class="pt-4 md:pt-6">
-                    <a href="../contact/index.html" class="inline-flex items-center justify-center w-full sm:w-auto gap-4 bg-white text-black font-black py-4 md:py-5 px-8 md:px-10 rounded-2xl hover:bg-red-600 hover:text-white transition-all duration-300 uppercase tracking-widest text-[10px] md:text-xs">
+                    <a href="../contact/index.html" class="inline-flex items-center justify-center w-full sm:w-auto gap-4 bg-black text-white font-black py-4 md:py-5 px-8 md:px-10 rounded-2xl hover:bg-red-600 transition-all duration-300 uppercase tracking-widest text-[10px] md:text-xs">
                         Work With Us <i class="fas fa-arrow-right"></i>
                     </a>
                 </div>
@@ -323,51 +322,51 @@ pan India car detailing brand">
         </div>
 
         <!-- Stats Section -->
-        <div class="max-w-7xl mx-auto mt-20 md:mt-40 grid grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 border-t border-white/5 pt-16 md:pt-20">
+        <div class="max-w-7xl mx-auto mt-20 md:mt-40 grid grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 border-t border-gray-100 pt-16 md:pt-20">
             <div class="text-center group">
-                <div class="w-20 h-20 bg-white/5 rounded-3xl flex items-center justify-center mx-auto mb-8 group-hover:bg-red-600 transition-all duration-500 shadow-xl">
+                <div class="w-20 h-20 bg-gray-50 rounded-3xl flex items-center justify-center mx-auto mb-8 group-hover:bg-red-600 transition-all duration-500 shadow-xl">
                     <i class="fas fa-shield-halved text-3xl text-red-600 group-hover:text-white transition-colors"></i>
                 </div>
-                <div class="text-4xl md:text-6xl font-black italic text-white mb-3 tracking-tighter uppercase">
+                <div class="text-4xl md:text-6xl font-black italic text-black mb-3 tracking-tighter uppercase">
                     50K +
                 </div>
-                 <div class="text-zinc-500 uppercase text-[10px] font-black tracking-[0.3em]">
+                 <div class="text-gray-400 uppercase text-[10px] font-black tracking-[0.3em]">
                     Policies Done
                 </div>
             </div>
             
                <div class="text-center group">
-                <div class="w-20 h-20 bg-white/5 rounded-3xl flex items-center justify-center mx-auto mb-8 group-hover:bg-red-600 transition-all duration-500 shadow-xl">
+                <div class="w-20 h-20 bg-gray-50 rounded-3xl flex items-center justify-center mx-auto mb-8 group-hover:bg-red-600 transition-all duration-500 shadow-xl">
                     <i class="fas fa-file-invoice-dollar text-3xl text-red-600 group-hover:text-white transition-colors"></i>
                 </div>
-                <div class="text-4xl md:text-6xl font-black italic text-white mb-3 tracking-tighter uppercase">
+                <div class="text-4xl md:text-6xl font-black italic text-black mb-3 tracking-tighter uppercase">
                    25K +
                 </div>
-                <div class="text-zinc-500 uppercase text-[10px] font-black tracking-[0.3em]">
+                <div class="text-gray-400 uppercase text-[10px] font-black tracking-[0.3em]">
                     Challans Paid
                 </div>
             </div>
             
             <div class="text-center group">
-                <div class="w-20 h-20 bg-white/5 rounded-3xl flex items-center justify-center mx-auto mb-8 group-hover:bg-red-600 transition-all duration-500 shadow-xl">
+                <div class="w-20 h-20 bg-gray-50 rounded-3xl flex items-center justify-center mx-auto mb-8 group-hover:bg-red-600 transition-all duration-500 shadow-xl">
                     <i class="fas fa-id-card text-3xl text-red-600 group-hover:text-white transition-colors"></i>
                 </div>
-                <div class="text-4xl md:text-6xl font-black italic text-white mb-3 tracking-tighter uppercase">
+                <div class="text-4xl md:text-6xl font-black italic text-black mb-3 tracking-tighter uppercase">
                   10K +
                 </div>
-                <div class="text-zinc-500 uppercase text-[10px] font-black tracking-[0.3em]">
+                <div class="text-gray-400 uppercase text-[10px] font-black tracking-[0.3em]">
                    PAN Applications
                 </div>
             </div>
             
             <div class="text-center group">
-                <div class="w-20 h-20 bg-white/5 rounded-3xl flex items-center justify-center mx-auto mb-8 group-hover:bg-red-600 transition-all duration-500 shadow-xl">
+                <div class="w-20 h-20 bg-gray-50 rounded-3xl flex items-center justify-center mx-auto mb-8 group-hover:bg-red-600 transition-all duration-500 shadow-xl">
                     <i class="fas fa-heart text-3xl text-red-600 group-hover:text-white transition-colors"></i>
                 </div>
-                <div class="text-4xl md:text-6xl font-black italic text-white mb-3 tracking-tighter uppercase">
+                <div class="text-4xl md:text-6xl font-black italic text-black mb-3 tracking-tighter uppercase">
                    100K +
                 </div>
-                <div class="text-zinc-500 uppercase text-[10px] font-black tracking-[0.3em]">
+                <div class="text-gray-400 uppercase text-[10px] font-black tracking-[0.3em]">
                    Happy Clients
                 </div>
             </div>

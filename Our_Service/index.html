@@ -11,75 +11,75 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
-        body { font-family: 'Inter', sans-serif; background-color: #000; color: #fff; scroll-behavior: smooth; }
+        body { font-family: 'Inter', sans-serif; background-color: #fff; color: #000; scroll-behavior: smooth; }
         .service-card { 
             transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1); 
-            border: 1px solid rgba(255, 255, 255, 0.05);
-            background: rgba(18, 18, 18, 0.8);
-            backdrop-filter: blur(10px);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            background: #fff;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
         }
         .service-card:hover { 
             transform: translateY(-15px) scale(1.02); 
-            border-color: rgba(239, 68, 68, 0.5); 
-            box-shadow: 0 30px 60px -15px rgba(239, 68, 68, 0.2); 
+            border-color: rgba(239, 68, 68, 0.3); 
+            box-shadow: 0 30px 60px -15px rgba(239, 68, 68, 0.1); 
         }
         .hero-gradient {
-            background: radial-gradient(circle at center, rgba(239, 68, 68, 0.15) 0%, transparent 70%);
+            background: radial-gradient(circle at center, rgba(239, 68, 68, 0.1) 0%, transparent 70%);
         }
         .nav-scrolled {
-            background-color: rgba(0, 0, 0, 0.9) !important;
+            background-color: rgba(255, 255, 255, 0.95) !important;
             backdrop-filter: blur(20px);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
         }
     </style>
 </head>
-<body class="bg-black text-white">
+<body class="bg-white text-black">
     <!-- Navbar -->
     <nav id="site-navbar" class="fixed w-full z-50 bg-transparent transition-all duration-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-24">
                 <a href="../index.html" class="flex-shrink-0 flex items-center">
-                    <span class="text-3xl font-black tracking-tighter text-white uppercase italic"><span class="text-red-600">DHAWAN</span> SERVICE</span>
+                    <span class="text-3xl font-black tracking-tighter text-white uppercase italic" id="nav-logo"><span class="text-red-600">DHAWAN</span> SERVICE</span>
                 </a>
                 <div class="hidden lg:flex items-center space-x-10">
-                    <a href="../index.html" class="text-xs font-black tracking-[0.2em] text-white hover:text-red-500 transition-colors uppercase">HOME</a>
-                    <a href="../about/index.html" class="text-xs font-black tracking-[0.2em] text-white hover:text-red-500 transition-colors uppercase">ABOUT US</a>
+                    <a href="../index.html" class="text-xs font-black tracking-[0.2em] text-white hover:text-red-500 transition-colors uppercase nav-link">HOME</a>
+                    <a href="../about/index.html" class="text-xs font-black tracking-[0.2em] text-white hover:text-red-500 transition-colors uppercase nav-link">ABOUT US</a>
                     <a href="./index.html" class="text-xs font-black tracking-[0.2em] text-red-600 uppercase">SERVICES</a>
-                    <a href="./OUR_presence.html" class="text-xs font-black tracking-[0.2em] text-white hover:text-red-500 transition-colors uppercase">LOCATIONS</a>
-                    <a href="../Blog/index.html" class="text-xs font-black tracking-[0.2em] text-white hover:text-red-500 transition-colors uppercase">BLOG</a>
-                    <a href="../contact/index.html" class="text-xs font-black tracking-[0.2em] text-white hover:text-red-500 transition-colors uppercase">CONTACT</a>
+                    <a href="../Blog/index.html" class="text-xs font-black tracking-[0.2em] text-white hover:text-red-500 transition-colors uppercase nav-link">BLOG</a>
                 </div>
                 <div class="hidden lg:block">
                     <a href="../contact/index.html">
                         <button class="bg-red-600 text-white px-8 py-3 rounded-2xl text-xs font-black tracking-[0.2em] hover:bg-red-700 transition-all transform hover:scale-105 shadow-lg shadow-red-600/20 uppercase">
-                            GET STARTED
+                            CONTACT US
                         </button>
                     </a>
                 </div>
-                <div class="lg:hidden flex items-center">
-                    <button id="mobile-toggle" class="text-white focus:outline-none">
+                <div class="lg:hidden flex items-center text-white" id="mobile-toggle-btn">
+                    <button id="mobile-toggle" class="focus:outline-none">
                         <i class="fas fa-bars text-2xl"></i>
                     </button>
                 </div>
             </div>
         </div>
         <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden lg:hidden bg-black/95 backdrop-blur-xl border-t border-white/10 p-6 space-y-4">
-            <a href="../index.html" class="block text-sm font-black tracking-widest text-white uppercase">HOME</a>
-            <a href="../about/index.html" class="block text-sm font-black tracking-widest text-white uppercase">ABOUT US</a>
+        <div id="mobile-menu" class="hidden lg:hidden bg-white/95 backdrop-blur-xl border-t border-gray-100 p-6 space-y-4 shadow-2xl">
+            <a href="../index.html" class="block text-sm font-black tracking-widest text-black uppercase">HOME</a>
+            <a href="../about/index.html" class="block text-sm font-black tracking-widest text-black uppercase">ABOUT US</a>
             <a href="./index.html" class="block text-sm font-black tracking-widest text-red-600 uppercase">SERVICES</a>
-            <a href="./OUR_presence.html" class="block text-sm font-black tracking-widest text-white uppercase">LOCATIONS</a>
-            <a href="../Blog/index.html" class="block text-sm font-black tracking-widest text-white uppercase">BLOG</a>
-            <a href="../contact/index.html" class="block text-sm font-black tracking-widest text-white uppercase">CONTACT</a>
+            <a href="../Blog/index.html" class="block text-sm font-black tracking-widest text-black uppercase">BLOG</a>
+            <a href="../contact/index.html" class="block pt-4">
+                <button class="w-full bg-red-600 text-white py-4 rounded-xl font-bold uppercase tracking-widest text-xs">Contact Us</button>
+            </a>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section class="relative w-full h-[60vh] md:h-[75vh] flex items-center justify-center overflow-hidden">
         <div class="absolute inset-0 z-0">
-            <img src="https://images.unsplash.com/photo-1590674867571-873552480c72?q=80&w=1920&auto=format&fit=crop" 
+            <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=1920&auto=format&fit=crop" 
                  alt="Our Services" class="w-full h-full object-cover">
-            <div class="absolute inset-0 bg-gradient-to-b from-black/80 via-black/20 to-black"></div>
+            <div class="absolute inset-0 bg-gradient-to-b from-black/70 via-black/20 to-white"></div>
         </div>
         
         <div class="relative z-10 text-center px-4 max-w-5xl">
@@ -112,15 +112,15 @@
                     </div>
                 </div>
                 <div class="p-6 md:p-10">
-                    <h3 class="text-2xl md:text-3xl font-black italic mb-4 uppercase tracking-tighter">Vehicle Insurance</h3>
-                    <p class="text-gray-400 text-base md:text-lg mb-6 md:mb-8 font-medium leading-relaxed">Comprehensive coverage for all types of vehicles to keep you protected on the road.</p>
-                    <ul class="space-y-3 md:space-y-4 text-[10px] md:text-sm font-bold tracking-wide text-gray-300 mb-8 md:mb-10">
+                    <h3 class="text-2xl md:text-3xl font-black italic mb-4 uppercase tracking-tighter text-black">Vehicle Insurance</h3>
+                    <p class="text-gray-600 text-base md:text-lg mb-6 md:mb-8 font-medium leading-relaxed">Comprehensive coverage for all types of vehicles to keep you protected on the road.</p>
+                    <ul class="space-y-3 md:space-y-4 text-[10px] md:text-sm font-bold tracking-wide text-gray-800 mb-8 md:mb-10">
                         <li class="flex items-center gap-3"><i class="fas fa-circle text-[6px] text-red-600"></i> BIKE INSURANCE</li>
                         <li class="flex items-center gap-3"><i class="fas fa-circle text-[6px] text-red-600"></i> CAR INSURANCE</li>
                         <li class="flex items-center gap-3"><i class="fas fa-circle text-[6px] text-red-600"></i> TAXI INSURANCE</li>
                         <li class="flex items-center gap-3"><i class="fas fa-circle text-[6px] text-red-600"></i> COMMERCIAL VEHICLES</li>
                     </ul>
-                    <a href="../contact/" class="inline-flex items-center gap-3 text-red-500 font-black text-[10px] md:text-xs tracking-[0.2em] uppercase group-hover:gap-5 transition-all">
+                    <a href="../contact/" class="inline-flex items-center gap-3 text-red-600 font-black text-[10px] md:text-xs tracking-[0.2em] uppercase group-hover:gap-5 transition-all">
                         GET A QUOTE <i class="fas fa-arrow-right"></i>
                     </a>
                 </div>
@@ -131,7 +131,7 @@
                 <div class="h-48 sm:h-64 overflow-hidden relative">
                     <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=800&auto=format&fit=crop" 
                          alt="Challan Payment" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent"></div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                     <div class="absolute bottom-4 left-4 md:bottom-6 md:left-6">
                         <div class="w-10 h-10 md:w-12 md:h-12 bg-red-600 rounded-xl flex items-center justify-center mb-2">
                             <i class="fas fa-file-invoice-dollar text-white text-lg md:text-xl"></i>
@@ -139,15 +139,15 @@
                     </div>
                 </div>
                 <div class="p-6 md:p-10">
-                    <h3 class="text-2xl md:text-3xl font-black italic mb-4 uppercase tracking-tighter">Challan Payment</h3>
-                    <p class="text-gray-400 text-base md:text-lg mb-6 md:mb-8 font-medium leading-relaxed">Skip the long queues. We help you pay your traffic challans quickly and easily online.</p>
-                    <ul class="space-y-3 md:space-y-4 text-[10px] md:text-sm font-bold tracking-wide text-gray-300 mb-8 md:mb-10">
+                    <h3 class="text-2xl md:text-3xl font-black italic mb-4 uppercase tracking-tighter text-black">Challan Payment</h3>
+                    <p class="text-gray-600 text-base md:text-lg mb-6 md:mb-8 font-medium leading-relaxed">Skip the long queues. We help you pay your traffic challans quickly and easily online.</p>
+                    <ul class="space-y-3 md:space-y-4 text-[10px] md:text-sm font-bold tracking-wide text-gray-800 mb-8 md:mb-10">
                         <li class="flex items-center gap-3"><i class="fas fa-circle text-[6px] text-red-600"></i> INSTANT VERIFICATION</li>
                         <li class="flex items-center gap-3"><i class="fas fa-circle text-[6px] text-red-600"></i> SECURE PAYMENT</li>
                         <li class="flex items-center gap-3"><i class="fas fa-circle text-[6px] text-red-600"></i> PAYMENT RECEIPT</li>
                         <li class="flex items-center gap-3"><i class="fas fa-circle text-[6px] text-red-600"></i> RECORD UPDATION</li>
                     </ul>
-                    <a href="../contact/" class="inline-flex items-center gap-3 text-red-500 font-black text-[10px] md:text-xs tracking-[0.2em] uppercase group-hover:gap-5 transition-all">
+                    <a href="../contact/" class="inline-flex items-center gap-3 text-red-600 font-black text-[10px] md:text-xs tracking-[0.2em] uppercase group-hover:gap-5 transition-all">
                         PAY NOW <i class="fas fa-arrow-right"></i>
                     </a>
                 </div>
@@ -158,7 +158,7 @@
                 <div class="h-48 sm:h-64 overflow-hidden relative">
                     <img src="https://images.unsplash.com/photo-1633158829585-23ba8f7c8caf?q=80&w=800&auto=format&fit=crop" 
                          alt="PAN Card Services" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent"></div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                     <div class="absolute bottom-4 left-4 md:bottom-6 md:left-6">
                         <div class="w-10 h-10 md:w-12 md:h-12 bg-red-600 rounded-xl flex items-center justify-center mb-2">
                             <i class="fas fa-id-card text-white text-lg md:text-xl"></i>
@@ -166,15 +166,15 @@
                     </div>
                 </div>
                 <div class="p-6 md:p-10">
-                    <h3 class="text-2xl md:text-3xl font-black italic mb-4 uppercase tracking-tighter">PAN Card Services</h3>
-                    <p class="text-gray-400 text-base md:text-lg mb-6 md:mb-8 font-medium leading-relaxed">New PAN card application or correction in existing one, we handle everything for you.</p>
-                    <ul class="space-y-3 md:space-y-4 text-[10px] md:text-sm font-bold tracking-wide text-gray-300 mb-8 md:mb-10">
+                    <h3 class="text-2xl md:text-3xl font-black italic mb-4 uppercase tracking-tighter text-black">PAN Card Services</h3>
+                    <p class="text-gray-600 text-base md:text-lg mb-6 md:mb-8 font-medium leading-relaxed">New PAN card application or correction in existing one, we handle everything for you.</p>
+                    <ul class="space-y-3 md:space-y-4 text-[10px] md:text-sm font-bold tracking-wide text-gray-800 mb-8 md:mb-10">
                         <li class="flex items-center gap-3"><i class="fas fa-circle text-[6px] text-red-600"></i> NEW APPLICATION</li>
                         <li class="flex items-center gap-3"><i class="fas fa-circle text-[6px] text-red-600"></i> PAN CORRECTION</li>
                         <li class="flex items-center gap-3"><i class="fas fa-circle text-[6px] text-red-600"></i> RE-PRINT PAN</li>
                         <li class="flex items-center gap-3"><i class="fas fa-circle text-[6px] text-red-600"></i> E-PAN SERVICES</li>
                     </ul>
-                    <a href="../contact/" class="inline-flex items-center gap-3 text-red-500 font-black text-[10px] md:text-xs tracking-[0.2em] uppercase group-hover:gap-5 transition-all">
+                    <a href="../contact/" class="inline-flex items-center gap-3 text-red-600 font-black text-[10px] md:text-xs tracking-[0.2em] uppercase group-hover:gap-5 transition-all">
                         APPLY NOW <i class="fas fa-arrow-right"></i>
                     </a>
                 </div>
@@ -185,7 +185,7 @@
                 <div class="h-48 sm:h-64 overflow-hidden relative">
                     <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?q=80&w=800&auto=format&fit=crop" 
                          alt="Health & Pollution" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent"></div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                     <div class="absolute bottom-4 left-4 md:bottom-6 md:left-6">
                         <div class="w-10 h-10 md:w-12 md:h-12 bg-red-600 rounded-xl flex items-center justify-center mb-2">
                             <i class="fas fa-leaf text-white text-lg md:text-xl"></i>
@@ -193,15 +193,15 @@
                     </div>
                 </div>
                 <div class="p-6 md:p-10">
-                    <h3 class="text-2xl md:text-3xl font-black italic mb-4 uppercase tracking-tighter">Health & Pollution</h3>
-                    <p class="text-gray-400 text-base md:text-lg mb-6 md:mb-8 font-medium leading-relaxed">Get your vehicle's health check and pollution certificate (PUC) without any hassle.</p>
-                    <ul class="space-y-3 md:space-y-4 text-[10px] md:text-sm font-bold tracking-wide text-gray-300 mb-8 md:mb-10">
+                    <h3 class="text-2xl md:text-3xl font-black italic mb-4 uppercase tracking-tighter text-black">Health & Pollution</h3>
+                    <p class="text-gray-600 text-base md:text-lg mb-6 md:mb-8 font-medium leading-relaxed">Get your vehicle's health check and pollution certificate (PUC) without any hassle.</p>
+                    <ul class="space-y-3 md:space-y-4 text-[10px] md:text-sm font-bold tracking-wide text-gray-800 mb-8 md:mb-10">
                         <li class="flex items-center gap-3"><i class="fas fa-circle text-[6px] text-red-600"></i> POLLUTION CHECK (PUC)</li>
                         <li class="flex items-center gap-3"><i class="fas fa-circle text-[6px] text-red-600"></i> FITNESS CERTIFICATE</li>
                         <li class="flex items-center gap-3"><i class="fas fa-circle text-[6px] text-red-600"></i> HEALTH INSPECTION</li>
                         <li class="flex items-center gap-3"><i class="fas fa-circle text-[6px] text-red-600"></i> ANNUAL MAINTENANCE</li>
                     </ul>
-                    <a href="../contact/" class="inline-flex items-center gap-3 text-red-500 font-black text-[10px] md:text-xs tracking-[0.2em] uppercase group-hover:gap-5 transition-all">
+                    <a href="../contact/" class="inline-flex items-center gap-3 text-red-600 font-black text-[10px] md:text-xs tracking-[0.2em] uppercase group-hover:gap-5 transition-all">
                         BOOK NOW <i class="fas fa-arrow-right"></i>
                     </a>
                 </div>
@@ -212,7 +212,7 @@
                 <div class="h-48 sm:h-64 overflow-hidden relative">
                     <img src="https://images.unsplash.com/photo-1590674867571-873552480c72?q=80&w=1200&auto=format&fit=crop" 
                          alt="RTO Services" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent"></div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                     <div class="absolute bottom-4 left-4 md:bottom-6 md:left-6">
                         <div class="w-10 h-10 md:w-12 md:h-12 bg-red-600 rounded-xl flex items-center justify-center mb-2">
                             <i class="fas fa-car-on text-white text-lg md:text-xl"></i>
@@ -220,15 +220,15 @@
                     </div>
                 </div>
                 <div class="p-6 md:p-10">
-                    <h3 class="text-2xl md:text-3xl font-black italic mb-4 uppercase tracking-tighter">RTO Services</h3>
-                    <p class="text-gray-400 text-base md:text-lg mb-6 md:mb-8 font-medium leading-relaxed">Assistance with various RTO related documentations and transfers.</p>
-                    <ul class="space-y-3 md:space-y-4 text-[10px] md:text-sm font-bold tracking-wide text-gray-300 mb-8 md:mb-10">
+                    <h3 class="text-2xl md:text-3xl font-black italic mb-4 uppercase tracking-tighter text-black">RTO Services</h3>
+                    <p class="text-gray-600 text-base md:text-lg mb-6 md:mb-8 font-medium leading-relaxed">Assistance with various RTO related documentations and transfers.</p>
+                    <ul class="space-y-3 md:space-y-4 text-[10px] md:text-sm font-bold tracking-wide text-gray-800 mb-8 md:mb-10">
                         <li class="flex items-center gap-3"><i class="fas fa-circle text-[6px] text-red-600"></i> VEHICLE TRANSFER</li>
                         <li class="flex items-center gap-3"><i class="fas fa-circle text-[6px] text-red-600"></i> ADDRESS CHANGE</li>
                         <li class="flex items-center gap-3"><i class="fas fa-circle text-[6px] text-red-600"></i> HP DELETION</li>
                         <li class="flex items-center gap-3"><i class="fas fa-circle text-[6px] text-red-600"></i> RC RENEWAL</li>
                     </ul>
-                    <a href="../contact/" class="inline-flex items-center gap-3 text-red-500 font-black text-[10px] md:text-xs tracking-[0.2em] uppercase group-hover:gap-5 transition-all">
+                    <a href="../contact/" class="inline-flex items-center gap-3 text-red-600 font-black text-[10px] md:text-xs tracking-[0.2em] uppercase group-hover:gap-5 transition-all">
                         LEARN MORE <i class="fas fa-arrow-right"></i>
                     </a>
                 </div>
@@ -238,12 +238,41 @@
     </section>
 
     <script>
-        window.addEventListener('scroll', () => {
-            const nav = document.getElementById('site-navbar');
-            if (window.scrollY > 50) nav.classList.add('nav-scrolled');
-            else nav.classList.remove('nav-scrolled');
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('site-navbar');
+            const logo = document.getElementById('nav-logo');
+            const navLinks = document.querySelectorAll('.nav-link');
+            const mobileToggleBtn = document.getElementById('mobile-toggle-btn');
+            
+            if (window.scrollY > 50) {
+                navbar.classList.add('nav-scrolled');
+                logo.classList.remove('text-white');
+                logo.classList.add('text-black');
+                navLinks.forEach(link => {
+                    link.classList.remove('text-white');
+                    link.classList.add('text-black');
+                });
+                if(mobileToggleBtn) {
+                    mobileToggleBtn.classList.remove('text-white');
+                    mobileToggleBtn.classList.add('text-black');
+                }
+            } else {
+                navbar.classList.remove('nav-scrolled');
+                logo.classList.add('text-white');
+                logo.classList.remove('text-black');
+                navLinks.forEach(link => {
+                    link.classList.add('text-white');
+                    link.classList.remove('text-black');
+                });
+                if(mobileToggleBtn) {
+                    mobileToggleBtn.classList.add('text-white');
+                    mobileToggleBtn.classList.remove('text-black');
+                }
+            }
         });
 
+        // Mobile menu functionality
         const mobileToggle = document.getElementById('mobile-toggle');
         const mobileMenu = document.getElementById('mobile-menu');
         if (mobileToggle && mobileMenu) {
